@@ -380,7 +380,7 @@ while run_server:
             #transcription_text = gr.Textbox(label="Transcription Text", lines=1, placeholder="Enter Text of your Audio Sample here...")
             with gr.Row():
                 with gr.Column():
-                    initialname = "./bark/assets/prompts/custom/MeMyselfAndI"
+                    initialname = "Custom_Voice"
                     output_voice = gr.Textbox(label="Filename of trained Voice", lines=1, placeholder=initialname, value=initialname)
                 with gr.Column():
                     tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1])
@@ -388,6 +388,7 @@ while run_server:
                 clone_voice_button = gr.Button("Create Voice")
             with gr.Row():
                 dummy = gr.Text(label="Progress")
+                npz_file = gr.File(label=".npz file")
 
         with gr.Tab("Training Data Prepare"):
             gr.Markdown("This tab should be used to generate the training dataset. For Step 1 put some books into the inputtext folder in UTF-8 Text Format.")
@@ -443,7 +444,7 @@ while run_server:
         hidden_checkbox.change(delete_output_files, [hidden_checkbox], [hidden_checkbox])
 
         swap_voice_button.click(swap_voice_from_audio, inputs=[swap_audio_filename, speaker_swap, swap_tokenizer_lang, swap_seed, swap_batchcount], outputs=output_swap)
-        clone_voice_button.click(clone_voice, inputs=[input_audio_filename, output_voice], outputs=dummy)
+        clone_voice_button.click(clone_voice, inputs=[input_audio_filename, output_voice], outputs=[dummy, npz_file])
         training_prepare_button.click(training_prepare, inputs=[prepare_dropdown, prepare_semantics_number], outputs=dummytrd)
         train_button.click(start_training, inputs=[save_model_epoch, max_epochs], outputs=dummytrain)
         button_apply_settings.click(apply_settings, inputs=[themes, input_server_name, input_server_port, share_checkbox, input_desired_len, input_max_len, input_silence_break, input_silence_speakers])
