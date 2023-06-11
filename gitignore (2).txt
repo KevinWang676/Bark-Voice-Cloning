@@ -1,0 +1,14 @@
+__pycache__/
+/outputs
+/speakers
+.vs
+*.npz
+*.wav
+*.npy
+.vs/
+/models
+/bark_ui_enhanced.egg-info
+/build/lib/bark
+*.pth
+*.pt
+*.zip

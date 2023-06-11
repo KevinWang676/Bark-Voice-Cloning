@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bark-ui-enhanced"
+version = "0.7.0"
+description = "Bark text to audio model with addition features and a Web UI"
+readme = "README.md"
+requires-python = ">=3.8"
+authors =  [
+    {name = "Suno Inc (original Bark)", email = "hello@suno.ai"},
+    {name = "Count Floyd"},
+]
+# MIT License
+license = {file = "LICENSE"}
+
+dependencies = [
+    "boto3",
+    "encodec",
+    "funcy",
+    "huggingface-hub>=0.14.1",
+    "numpy",
+    "scipy",
+    "tokenizers",
+    "torch",
+    "tqdm",
+    "transformers",
+]
+
+[project.urls]
+source = "https://github.com/C0untFloyd/bark-gui"
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "codecov",
+    "flake8",
+    "hypothesis>=6.14,<7",
+    "isort>=5.0.0,<6",
+    "jupyter",
+    "mypy",
+    "nbconvert",
+    "nbformat",
+    "pydocstyle",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.setuptools]
+packages = ["bark"]
+
+[tool.setuptools.package-data]
+bark = ["assets/prompts/*.npz", "assets/prompts/v2/*.npz"]
+
+
+[tool.black]
+line-length = 100
