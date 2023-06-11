@@ -65,4 +65,4 @@ def clone_voice(audio_filepath, dest_filename, progress=gradio.Progress(track_tq
     import numpy as np
     output_path = dest_filename + '.npz'
     np.savez(output_path, fine_prompt=codes, coarse_prompt=codes[:2, :], semantic_prompt=semantic_tokens)
-    return "Finished"
+    return ["Finished", output_path]
