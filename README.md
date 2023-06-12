@@ -6,4 +6,4 @@ Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang
 
 HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-Voice-Cloning)
 
-If you like the quick start is easy to use, please star this repository. ⭐⭐⭐
+If you like the quick start, please star this repository. ⭐⭐⭐
