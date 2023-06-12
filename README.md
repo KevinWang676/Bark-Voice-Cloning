@@ -2,7 +2,7 @@
 
 Based on [bark-gui](https://github.com/C0untFloyd/bark-gui). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
 
-Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb)
+Quick start: [Colab Notebook](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning_UI.ipynb)
 
 HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-Voice-Cloning)
 
@@ -12,4 +12,4 @@ HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang67
 
 (2) Choose "file" in `Voice` if you'd like to use voice cloning.
 
-If you like the quick start, please star this repository. ⭐⭐⭐
+## If you like the quick start, please star this repository. ⭐⭐⭐
