@@ -31,7 +31,7 @@ def clone_voice(audio_filepath, dest_filename, progress=gradio.Progress(track_tq
     hubert_model = CustomHubert(checkpoint_path='./models/hubert/hubert.pt').to(device)
 
     # Load the CustomTokenizer model
-    tokenizer = CustomTokenizer.load_from_checkpoint('./models/hubert/tokenizer.pth').to(device)  # Automatically uses the right layers
+    tokenizer = CustomTokenizer.load_from_checkpoint('./models/hubert/en_tokenizer.pth').to(device)  # corret path
 
     progress(0.25, desc="Converting WAV")
 
