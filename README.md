@@ -2,9 +2,9 @@
 
 Based on [bark-gui](https://github.com/C0untFloyd/bark-gui). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
 
-Quick start: [Colab Notebook](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning_UI.ipynb)
+Quick start: [Colab Notebook](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning_UI.ipynb) ⚡
 
-HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-Voice-Cloning)
+HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-Voice-Cloning) 🤗
 
 ## Easy to use: 
 
