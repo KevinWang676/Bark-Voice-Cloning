@@ -300,6 +300,23 @@ while run_server:
             with gr.Column():
                 gr.HTML(create_version_html(), elem_id="versions")
 
+        with gr.Tab("Clone Voice"):
+            with gr.Row():
+                input_audio_filename = gr.Audio(label="Input audio.wav", source="upload", type="filepath")
+            #transcription_text = gr.Textbox(label="Transcription Text", lines=1, placeholder="Enter Text of your Audio Sample here...")
+            with gr.Row():
+                with gr.Column():
+                    initialname = "/content/Bark-Voice-Cloning/bark/assets/prompts/file"
+                    output_voice = gr.Textbox(label="Filename of trained Voice", lines=1, placeholder=initialname, value=initialname)
+                with gr.Column():
+                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1])
+            with gr.Row():
+                clone_voice_button = gr.Button("Create Voice")
+            with gr.Row():
+                dummy = gr.Text(label="Progress")
+                npz_file = gr.File(label=".npz file")
+            speakers_list.insert(0, npz_file) # add prompt
+
         with gr.Tab("TTS"):
             with gr.Row():
                 with gr.Column():
@@ -338,6 +355,8 @@ while run_server:
                 with gr.Column():
                     gr.Markdown("[Voice Prompt Library](https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c)")
                     speaker = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice")
+                    speaker_custom = speakers_list[0]
+                    
                 with gr.Column():
                     text_temp = gr.Slider(0.1, 1.0, value=0.6, label="Generation Temperature", info="1.0 more diverse, 0.1 more conservative")
                     waveform_temp = gr.Slider(0.1, 1.0, value=0.7, label="Waveform temperature", info="1.0 more diverse, 0.1 more conservative")
@@ -353,6 +372,7 @@ while run_server:
             with gr.Row():
                 with gr.Column():
                     tts_create_button = gr.Button("Generate")
+                    tts_custom_button = gr.Button("Voice Cloning")
                 with gr.Column():
                     hidden_checkbox = gr.Checkbox(visible=False)
                     button_stop_generation = gr.Button("Stop generation")
@@ -373,22 +393,6 @@ while run_server:
                 swap_voice_button = gr.Button("Swap Voice")
             with gr.Row():
                 output_swap = gr.Audio(label="Generated Audio", type="filepath")
-
-        with gr.Tab("Clone Voice"):
-            with gr.Row():
-                input_audio_filename = gr.Audio(label="Input audio.wav", source="upload", type="filepath")
-            #transcription_text = gr.Textbox(label="Transcription Text", lines=1, placeholder="Enter Text of your Audio Sample here...")
-            with gr.Row():
-                with gr.Column():
-                    initialname = "Custom_Voice"
-                    output_voice = gr.Textbox(label="Filename of trained Voice", lines=1, placeholder=initialname, value=initialname)
-                with gr.Column():
-                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1])
-            with gr.Row():
-                clone_voice_button = gr.Button("Create Voice")
-            with gr.Row():
-                dummy = gr.Text(label="Progress")
-                npz_file = gr.File(label=".npz file")
 
         with gr.Tab("Training Data Prepare"):
             gr.Markdown("This tab should be used to generate the training dataset. For Step 1 put some books into the inputtext folder in UTF-8 Text Format.")
@@ -438,6 +442,9 @@ while run_server:
         convert_to_ssml_button.click(convert_text_to_ssml, inputs=[input_text, speaker],outputs=input_text)
         gen_click = tts_create_button.click(generate_text_to_speech, inputs=[input_text, speaker, text_temp, waveform_temp, eos_prob, quick_gen_checkbox, complete_settings, seedcomponent, batchcount],outputs=output_audio)
         button_stop_generation.click(fn=None, inputs=None, outputs=None, cancels=[gen_click])
+
+        tts_custom_button.click(generate_text_to_speech, inputs=[input_text, speaker_custom, text_temp, waveform_temp, eos_prob, quick_gen_checkbox, complete_settings, seedcomponent, batchcount],outputs=output_audio)
+        
         # Javascript hack to display modal confirmation dialog
         js = "(x) => confirm('Are you sure? This will remove all files from output folder')"
         button_delete_files.click(None, None, hidden_checkbox, _js=js)
@@ -463,7 +470,3 @@ while run_server:
             print("Keyboard interruption in main thread... closing server.")
             run_server = False
         barkgui.close()
-
-
-
-
