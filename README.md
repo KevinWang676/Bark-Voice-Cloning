@@ -8,8 +8,8 @@ HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang67
 
 ## Easy to use: 
 
-(1) First upload some audio and click 
+(1) First upload audio for voice cloning and click `Create Voice`.
 
-Choose "file" if
+(2) Choose "file" in `Voice` if you'd like to use voice cloning.
 
 If you like the quick start, please star this repository. ⭐⭐⭐
