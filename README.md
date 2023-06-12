@@ -12,4 +12,4 @@ HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang67
 
 (2) Choose "file" in `Voice` if you'd like to use voice cloning.
 
-## If you like the quick start, please star this repository. ⭐⭐⭐
+### If you like the quick start, please star this repository. ⭐⭐⭐
