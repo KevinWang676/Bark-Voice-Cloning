@@ -305,7 +305,7 @@ while run_server:
             #transcription_text = gr.Textbox(label="Transcription Text", lines=1, placeholder="Enter Text of your Audio Sample here...")
             with gr.Row():
                 with gr.Column():
-                    initialname = "/home/user/app/bark/assets/prompts/file"
+                    initialname = "/content/Bark-Voice-Cloning/bark/assets/prompts/file"
                     output_voice = gr.Textbox(label="Filename of trained Voice (do not change the initial name)", lines=1, placeholder=initialname, value=initialname, visible=False)
                 with gr.Column():
                     tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1], visible=False)
