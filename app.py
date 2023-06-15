@@ -31,7 +31,6 @@ from training.train import training_prepare_files, train
 
 settings = Settings('config.yaml')
 
-
 def generate_text_to_speech(text, selected_speaker, text_temp, waveform_temp, eos_prob, quick_generation, complete_settings, seed, batchcount, progress=gr.Progress(track_tqdm=True)):
     # Chunk the text into smaller pieces then combine the generated audio
 
@@ -222,9 +221,9 @@ def create_version_html():
     python_version = ".".join([str(x) for x in sys.version_info[0:3]])
     versions_html = f"""
 python: <span title="{sys.version}">{python_version}</span>
- • 
+ • 
 torch: {getattr(torch, '__long_version__',torch.__version__)}
- • 
+ • 
 gradio: {gr.__version__}
 """
     return versions_html
@@ -232,14 +231,13 @@ gradio: {gr.__version__}
     
 
 logger = logging.getLogger(__name__)
-APPTITLE = "Bark UI Enhanced v0.7"
+APPTITLE = "Bark Voice Cloning UI"
 
 
 autolaunch = False
 
 if len(sys.argv) > 1:
     autolaunch = "-autolaunch" in sys.argv
-
 
 if torch.cuda.is_available() == False:
     os.environ['BARK_FORCE_CPU'] = 'True'
@@ -294,67 +292,44 @@ while run_server:
     # Create Gradio Blocks
 
     with gr.Blocks(title=f"{APPTITLE}", mode=f"{APPTITLE}", theme=settings.selected_theme) as barkgui:
-        with gr.Row():
-            with gr.Column():
-                gr.Markdown(f"### [{APPTITLE}](https://github.com/C0untFloyd/bark-gui)")
-            with gr.Column():
-                gr.HTML(create_version_html(), elem_id="versions")
+        gr.Markdown("# <center>🐶🎶⭐ - Bark Voice Cloning</center>")
+        gr.Markdown("## <center>🤗 - If you like this space, please star my [github repo](https://github.com/KevinWang676/Bark-Voice-Cloning)</center>")
+        gr.Markdown("### <center>🎡 - Based on [bark-gui](https://github.com/C0untFloyd/bark-gui)</center>")
+        gr.Markdown(f""" You can duplicate and use it with a GPU: <a href="https://huggingface.co/spaces/{os.getenv('SPACE_ID')}?duplicate=true"><img style="display: inline; margin-top: 0em; margin-bottom: 0em" src="https://bit.ly/3gLdBN6" alt="Duplicate Space" /></a>
+                         or open in [Colab](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning_UI.ipynb) for quick start 🌟
+                    """)
 
-        with gr.Tab("Clone Voice"):
+        with gr.Tab("🎙️ - Clone Voice"):
             with gr.Row():
                 input_audio_filename = gr.Audio(label="Input audio.wav", source="upload", type="filepath")
             #transcription_text = gr.Textbox(label="Transcription Text", lines=1, placeholder="Enter Text of your Audio Sample here...")
             with gr.Row():
                 with gr.Column():
-                    initialname = "/content/Bark-Voice-Cloning/bark/assets/prompts/file"
-                    output_voice = gr.Textbox(label="Filename of trained Voice (do not change the initial name)", lines=1, placeholder=initialname, value=initialname)
+                    initialname = "/home/user/app/bark/assets/prompts/file"
+                    output_voice = gr.Textbox(label="Filename of trained Voice (do not change the initial name)", lines=1, placeholder=initialname, value=initialname, visible=False)
                 with gr.Column():
-                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1])
+                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1], visible=False)
             with gr.Row():
-                clone_voice_button = gr.Button("Create Voice")
+                clone_voice_button = gr.Button("Create Voice", variant="primary")
             with gr.Row():
                 dummy = gr.Text(label="Progress")
                 npz_file = gr.File(label=".npz file")
             speakers_list.insert(0, npz_file) # add prompt
 
-        with gr.Tab("TTS"):
+        with gr.Tab("🎵 - TTS"):
             with gr.Row():
                 with gr.Column():
                     placeholder = "Enter text here."
                     input_text = gr.Textbox(label="Input Text", lines=4, placeholder=placeholder)
+                    convert_to_ssml_button = gr.Button("Convert Input Text to SSML")
                 with gr.Column():
                         seedcomponent = gr.Number(label="Seed (default -1 = Random)", precision=0, value=-1)
                         batchcount = gr.Number(label="Batch count", precision=0, value=1)
-            with gr.Row():
-                with gr.Column():
-                    examples = [
-                        "Special meanings: [laughter] [laughs] [sighs] [music] [gasps] [clears throat] MAN: WOMAN:",
-                       "♪ Never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you ♪",
-                       "And now — a picture of a larch [laughter]",
-                       """
-                            WOMAN: I would like an oatmilk latte please.
-                            MAN: Wow, that's expensive!
-                       """,
-                       """<?xml version="1.0"?>
-    <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://www.w3.org/2001/10/synthesis
-                       http://www.w3.org/TR/speech-synthesis/synthesis.xsd"
-             xml:lang="en-US">
-    <voice name="/v2/en_speaker_9">Look at that drunk guy!</voice>
-    <voice name="/v2/en_speaker_3">Who is he?</voice>
-    <voice name="/v2/en_speaker_9">WOMAN: [clears throat] 10 years ago, he proposed me and I rejected him.</voice>
-    <voice name="/v2/en_speaker_3">Oh my God [laughs] he is still celebrating</voice>
-    </speak>"""
-                       ]
-                    examples = gr.Examples(examples=examples, inputs=input_text)
-                with gr.Column():
-                    convert_to_ssml_button = gr.Button("Convert Input Text to SSML")
-
+           
             with gr.Row():
                 with gr.Column():
                     gr.Markdown("[Voice Prompt Library](https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c)")
-                    speaker = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice")
+                    speaker = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice (Choose “file” if you wanna use the custom voice)")
                     
                 with gr.Column():
                     text_temp = gr.Slider(0.1, 1.0, value=0.6, label="Generation Temperature", info="1.0 more diverse, 0.1 more conservative")
@@ -370,14 +345,14 @@ while run_server:
 
             with gr.Row():
                 with gr.Column():
-                    tts_create_button = gr.Button("Generate")
+                    tts_create_button = gr.Button("Generate", variant="primary")
                 with gr.Column():
                     hidden_checkbox = gr.Checkbox(visible=False)
                     button_stop_generation = gr.Button("Stop generation")
             with gr.Row():
                 output_audio = gr.Audio(label="Generated Audio", type="filepath")
 
-        with gr.Tab("Swap Voice"):
+        with gr.Tab("🔮 - Voice Conversion"):
             with gr.Row():
                  swap_audio_filename = gr.Audio(label="Input audio.wav to swap voice", source="upload", type="filepath")
             with gr.Row():
@@ -385,73 +360,24 @@ while run_server:
                      swap_tokenizer_lang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1])
                      swap_seed = gr.Number(label="Seed (default -1 = Random)", precision=0, value=-1)
                  with gr.Column():
-                     speaker_swap = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice")
+                     speaker_swap = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice (Choose “file” if you wanna use the custom voice)")
                      swap_batchcount = gr.Number(label="Batch count", precision=0, value=1)
             with gr.Row():
-                swap_voice_button = gr.Button("Swap Voice")
+                swap_voice_button = gr.Button("Generate", variant="primary")
             with gr.Row():
                 output_swap = gr.Audio(label="Generated Audio", type="filepath")
 
-        with gr.Tab("Training Data Prepare"):
-            gr.Markdown("This tab should be used to generate the training dataset. For Step 1 put some books into the inputtext folder in UTF-8 Text Format.")
-            prepare_semantics_number = gr.Number(label="Number of semantics to create", precision=0, value=3079)
-            prepare_dropdown = gr.Dropdown(prepare_training_list, value=prepare_training_list[0], label="Prepare")
-            training_prepare_button = gr.Button("Generate")
-            dummytrd = gr.Text(label="Progress")
-
-        with gr.Tab("Training"):
-            with gr.Row():
-                gr.Markdown("This tab is used to train the actual model (language).")
-            with gr.Row():
-                with gr.Column():
-                    save_model_epoch = gr.Number(label="Auto-save model after number of epochs", precision=0, value=1)
-                with gr.Column():
-                    max_epochs = gr.Number(label="Train for number of epochs", precision=0, value=6)
-            with gr.Row():
-                with gr.Column():
-                    allowed_chars = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~'
-                    allowedcharsfilter = gr.Textbox(label="Allowed chars for text input", lines=1, value=allowed_chars)
-                with gr.Column():
-                    train_button = gr.Button("Start Training")
-            with gr.Row():
-                dummytrain = gr.Text(label="Progress")
-
-
-        with gr.Tab("Settings"):
-            with gr.Row():
-                themes = gr.Dropdown(available_themes, label="Theme", info="Change needs complete restart", value=settings.selected_theme)
-            with gr.Row():
-                input_server_name = gr.Textbox(label="Server Name", lines=1, info="Leave blank to run locally", value=settings.server_name)
-                input_server_port = gr.Number(label="Server Port", precision=0, info="Leave at 0 to use default", value=settings.server_port)
-                share_checkbox = gr.Checkbox(label="Public Server", value=settings.server_share)
-            with gr.Row():
-                input_desired_len = gr.Slider(100, 150, value=settings.input_text_desired_length, label="Desired Input Text Length", info="Ideal length to split input sentences")
-                input_max_len = gr.Slider(150, 256, value=settings.input_text_max_length, label="Max Input Text Length", info="Maximum Input Text Length")
-            with gr.Row():
-                input_silence_break = gr.Slider(1, 1000, value=settings.silence_sentence, label="Sentence Pause Time (ms)", info="Silence between sentences in milliseconds")
-                input_silence_speakers = gr.Slider(1, 5000, value=settings.silence_speakers, label="Speaker Pause Time (ms)", info="Silence between different speakers in milliseconds")
-
-            with gr.Row():
-                button_apply_settings = gr.Button("Apply Settings")
-                button_apply_restart = gr.Button("Restart Server")
-                button_delete_files = gr.Button("Clear output folder")
-
+   
         quick_gen_checkbox.change(fn=on_quick_gen_changed, inputs=quick_gen_checkbox, outputs=complete_settings)
         convert_to_ssml_button.click(convert_text_to_ssml, inputs=[input_text, speaker],outputs=input_text)
         gen_click = tts_create_button.click(generate_text_to_speech, inputs=[input_text, speaker, text_temp, waveform_temp, eos_prob, quick_gen_checkbox, complete_settings, seedcomponent, batchcount],outputs=output_audio)
         button_stop_generation.click(fn=None, inputs=None, outputs=None, cancels=[gen_click])
         
-        # Javascript hack to display modal confirmation dialog
-        js = "(x) => confirm('Are you sure? This will remove all files from output folder')"
-        button_delete_files.click(None, None, hidden_checkbox, _js=js)
-        hidden_checkbox.change(delete_output_files, [hidden_checkbox], [hidden_checkbox])
+
 
         swap_voice_button.click(swap_voice_from_audio, inputs=[swap_audio_filename, speaker_swap, swap_tokenizer_lang, swap_seed, swap_batchcount], outputs=output_swap)
-        clone_voice_button.click(clone_voice, inputs=[input_audio_filename, tokenizerlang, output_voice], outputs=[dummy, npz_file])
-        training_prepare_button.click(training_prepare, inputs=[prepare_dropdown, prepare_semantics_number], outputs=dummytrd)
-        train_button.click(start_training, inputs=[save_model_epoch, max_epochs], outputs=dummytrain)
-        button_apply_settings.click(apply_settings, inputs=[themes, input_server_name, input_server_port, share_checkbox, input_desired_len, input_max_len, input_silence_break, input_silence_speakers])
-        button_apply_restart.click(restart)
+        clone_voice_button.click(clone_voice, inputs=[input_audio_filename, output_voice], outputs=[dummy, npz_file])
+
 
         restart_server = False
         try:
