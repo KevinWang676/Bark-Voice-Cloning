@@ -10,7 +10,7 @@ import os
 import gradio
 
 
-def clone_voice(audio_filepath, tokenizer_lang, dest_filename, progress=gradio.Progress(track_tqdm=True)):
+def clone_voice(audio_filepath, dest_filename, progress=gradio.Progress(track_tqdm=True)):
     # if len(text) < 1:
     #    raise gradio.Error('No transcription text entered!')
 
@@ -21,7 +21,7 @@ def clone_voice(audio_filepath, tokenizer_lang, dest_filename, progress=gradio.P
     # From https://github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer
     hubert_manager = HuBERTManager()
     hubert_manager.make_sure_hubert_installed()
-    hubert_manager.make_sure_tokenizer_installed(tokenizer_lang=tokenizer_lang)
+    hubert_manager.make_sure_tokenizer_installed()
 
     # From https://github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer 
     # Load HuBERT for semantic tokens
@@ -31,7 +31,7 @@ def clone_voice(audio_filepath, tokenizer_lang, dest_filename, progress=gradio.P
     hubert_model = CustomHubert(checkpoint_path='./models/hubert/hubert.pt').to(device)
 
     # Load the CustomTokenizer model
-    tokenizer = CustomTokenizer.load_from_checkpoint(f'./models/hubert/{tokenizer_lang}_tokenizer.pth').to(device)  # Automatically uses the right layers
+    tokenizer = CustomTokenizer.load_from_checkpoint('./models/hubert/en_tokenizer.pth').to(device)  # change to the correct path 
 
     progress(0.25, desc="Converting WAV")
 
