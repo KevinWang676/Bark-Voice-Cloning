@@ -1,6 +1,8 @@
 # Bark Voice Cloning 🐶 & Voice Cloning for Chinese Speech 🎶
 
-## 1️⃣ Bark Voice Cloning   [简体中文](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md)
+## 1️⃣ Bark Voice Cloning
+
+### [简体中文](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md)
 
 Based on [bark-gui](https://github.com/C0untFloyd/bark-gui). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
 
