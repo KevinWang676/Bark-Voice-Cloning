@@ -1,4 +1,4 @@
-# Bark-Voice-Cloning 🐶 & Voice Cloning for Chinese [简体中文]
+# Bark Voice Cloning 🐶 & Voice Cloning for Chinese Speech 🎶
 
 Based on [bark-gui](https://github.com/C0untFloyd/bark-gui). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
 
