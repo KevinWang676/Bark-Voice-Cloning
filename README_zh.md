@@ -10,6 +10,6 @@ HuggingFace在线程序：[Bark Voice Cloning程序](https://huggingface.co/spac
 
 注：运行时需要使用GPU
 
-### 如果您喜欢这个项目，请在Github上点一个赞吧！ ⭐⭐⭐
+### 如果您喜欢这个项目，请在Github上点赞吧！ ⭐⭐⭐
 
 ## 2️⃣ 全新中文声音克隆
