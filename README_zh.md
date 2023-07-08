@@ -31,9 +31,7 @@ _注：运行时需要使用GPU_
 * 需要在运行完所有`pip install`命令后，点击Colab左下角终端，依次执行
 ```
 apt-get install sox
-
 cd pytorch_wavelets
-
 pip install .
 ```
 * 上传音频素材后，需要将代码`split_long_audio(whisper_model, "filename.wav", "test", "dataset_raw")`中的`filename`替换成音频文件的名字
