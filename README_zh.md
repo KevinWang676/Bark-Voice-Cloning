@@ -24,7 +24,7 @@ _注：运行时需要使用GPU_
 
 #### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb)运行程序：运行所有代码即可。
 
-您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。运行笔记本时的**注意事项**（按顺序排列）：
+您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。运行笔记本时的**注意事项**：
 
 * 需要在运行完所有`pip install`命令后，点击Colab左下角终端，依次执行
 ```
@@ -35,8 +35,9 @@ cd pytorch_wavelets
 pip install .
 ```
 * 上传音频素材后，需要将代码`split_long_audio(whisper_model, "filename.wav", "test", "dataset_raw")`中的`filename`替换成音频文件的名字
-* 需要新建三个文件夹，分别名为：`test_wavs`，`output_training_data`，`pretrain_work_dir`
-* 训练完成后，在推理模块的`output = inference(input="大家好呀，欢迎使用滔滔智能的声音克隆产品！")`处可以自由编辑中文文本，实现中文声音克隆
+* 需要在Colab中新建三个文件夹，分别名为：`test_wavs`，`output_training_data`，`pretrain_work_dir`
+* 训练完成后，在推理模块的`output = inference(input="大家好呀，欢迎使用滔滔智能的声音克隆产品！")`代码处可以自由编辑中文文本，实现中文声音克隆
+
 
 ### 三种使用方式 😄
 
