@@ -25,3 +25,9 @@ _注：运行时需要使用GPU_
 #### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese.ipynb#scrollTo=s2aAbOEPaVh6)运行程序：运行所有代码即可。
 
 您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。
+
+### 两种使用方式 😄
+
+在线快速运行: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese.ipynb#scrollTo=s2aAbOEPaVh6) ⚡
+
+HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
