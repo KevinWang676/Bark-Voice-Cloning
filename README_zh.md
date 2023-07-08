@@ -25,6 +25,3 @@ _注：运行时需要使用GPU_
 (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese.ipynb#scrollTo=s2aAbOEPaVh6)运行程序：运行所有代码即可。
 
 您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。
-
-![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/a24a576e-f2b5-470c-a6e3-49154393ee87)
-
