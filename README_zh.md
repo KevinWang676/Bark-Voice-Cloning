@@ -20,11 +20,11 @@ _注：运行时需要使用GPU_
 
 ### 如何使用 💡
 
-#### (1) 准备并上传一段中文语音：单一说话人、长度一分钟左右的`.wav`文件。
+### (1) 准备并上传一段中文语音：单一说话人、长度一分钟左右的`.wav`文件。
 
 我们的程序能够自动将您上传的语音切片。您可以使用我们制作的[专属工具](https://kevinwang676-test-1.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。
 
-#### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb)运行程序：运行所有代码即可。
+### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb)运行程序：运行所有代码即可。
 
 您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。运行笔记本时的**注意事项**：
 
