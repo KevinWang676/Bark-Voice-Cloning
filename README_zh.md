@@ -20,4 +20,4 @@ _注：运行时需要使用GPU_
 
 (1) 准备一段中文语音：单一说话人，长度一分钟左右。您可以使用我们制作的[专属工具](https://kevinwang676-test-1.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。
 
-(2) 使用我们的[Colab笔记本]运行程序：运行所有代码即可。您可以在笔记本中的`推理`部分更改中文文本，输出您想要的内容。
+(2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese.ipynb#scrollTo=s2aAbOEPaVh6)运行程序：运行所有代码即可。您可以在笔记本中的`推理`部分更改中文文本，输出您想要的内容。
