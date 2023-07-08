@@ -26,8 +26,10 @@ _注：运行时需要使用GPU_
 
 您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。
 
-### 两种使用方式 😄
+### 三种使用方式 😄
 
 在线快速运行: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese.ipynb#scrollTo=s2aAbOEPaVh6) ⚡
 
 HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
+
+阿里云笔记本在线运行：您也可以免费使用阿里云提供的[笔记本](https://modelscope.cn/models/damo/speech_personal_sambert-hifigan_nsf_tts_zh-cn_pretrain_16k/summary)进行训练。进入页面后点击右上角的`Notebook快速开发`，选择GPU环境，上传[Colab笔记本（可下载）](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb)和`.wav`文件素材后就能够以同样的方式运行啦！ 🍻
