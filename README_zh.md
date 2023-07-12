@@ -40,7 +40,7 @@ pip install .
 * 上传音频素材后，需要将代码`split_long_audio(whisper_model, "filename.wav", "test", "dataset_raw")`中的`filename`替换成音频文件的名字
 * 需要在Colab中新建三个文件夹，分别名为：`test_wavs`，`output_training_data`，`pretrain_work_dir`
 * 训练完成后，在推理模块的`output = inference(input="大家好呀，欢迎使用滔滔智能的声音克隆产品！")`代码处可以自由编辑中文文本，实现中文声音克隆
-* 整个过程都需要使用GPU
+* 整个过程都需要使用GPU；如果使用阿里云笔记本，则不需要在终端中执行第一步的环境设置
 
 ### (3) 一键在HuggingFace上免费部署 🤗
 
