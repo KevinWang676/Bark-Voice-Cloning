@@ -44,7 +44,7 @@ pip install .
 
 ### (3) 一键在HuggingFace上免费部署 🤗
 
-* 完成训练后，在Colab或阿里云笔记本中运行`!zip -r ./model.zip ./pretrain_work_dir`打包模型文件，下载并解压到本地
+* 完成训练后，在Colab或阿里云笔记本中运行`!zip -r ./model.zip ./pretrain_work_dir`打包模型文件夹，下载并解压到本地
 * 点击进入[HuggingFace程序](https://huggingface.co/spaces/kevinwang676/Personal-TTS)，点击右上角的三个圆点，选择`Duplicate this Space`将程序复制到自己的HuggingFace主页
 * 点击进入`Files`，选择右上角`Add file`后，点击`Upload files`，将解压后的文件夹`pretrain_work_dir`从本地直接拖拽上传；需要先删除原有的`pretrain_work_dir`同名文件夹
 
