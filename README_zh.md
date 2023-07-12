@@ -8,7 +8,7 @@ HuggingFace在线程序：[Bark声音克隆](https://huggingface.co/spaces/kevin
 
 使用指南：[B站视频](https://www.bilibili.com/video/BV16g4y1N7ZG) 📺
 
-_注：运行时需要使用GPU_
+_注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/bark-gui)项目；(2) 运行时需要使用GPU_
 
 #### 如果您喜欢这个项目，请在Github上点赞吧！ ⭐⭐⭐
 
