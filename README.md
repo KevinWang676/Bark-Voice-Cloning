@@ -8,6 +8,8 @@ Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang
 
 HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗
 
+If you would like to run the code locally, remember to replace the original path `/content/Bark-Voice-Cloning/bark/assets/prompts/file.npz` with the path of `file.npz` in your own computer.
+
 ### If you like the quick start, please star this repository. ⭐⭐⭐
 
 ## Easy to use: 
