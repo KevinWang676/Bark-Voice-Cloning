@@ -30,4 +30,4 @@ We want to point out that [Bark](https://github.com/suno-ai/bark) is very good a
 
 Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb) ⚡
 
-HuggingFace Demo: [Voice Cloning for Chinese Speech](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
+HuggingFace demo: [Voice Cloning for Chinese Speech](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
