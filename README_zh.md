@@ -13,7 +13,7 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 #### 如果您喜欢这个项目，请在Github上点赞吧！ ⭐⭐⭐
 
 ## 2️⃣ 全新中文声音克隆
-> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation`
+> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已更新在Colab笔记本中)
 
 ### 训练5分钟，通话不限时！ 🌞
 
