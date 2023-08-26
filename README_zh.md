@@ -22,7 +22,7 @@ Colab快速启动: [Colab笔记本](https://colab.research.google.com/drive/1rtl
 HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
 
 ## 3️⃣ SambertHifigan中文声音克隆
-> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在Colab笔记本中更新)
+> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在对应的Colab笔记本中更新)
 
 ### 训练5分钟，通话不限时！ 🌞
 
