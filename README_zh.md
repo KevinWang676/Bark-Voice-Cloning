@@ -15,6 +15,8 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 ## 2️⃣ 全新中文声音克隆
 > 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在Colab笔记本中更新)
 
+> 08/26/2023更新：VALL-E X声音克隆，支持中日英三语，快速复刻您喜欢的音色，[点击查看]
+
 ### 训练5分钟，通话不限时！ 🌞
 
 因为[Bark](https://github.com/suno-ai/bark)中文文本转语音的功能远远不如英文的效果好，所以我们采用一种新的技术路径[SambertHifigan](https://www.modelscope.cn/models/speech_tts/speech_sambert-hifigan_tts_zh-cn_multisp_pretrain_16k/summary)来实现中文的声音克隆功能。
@@ -23,7 +25,7 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 
 ### (1) 准备并上传一段中文语音：单一说话人、长度一分钟左右的`.wav`文件。
 
-我们的程序能够自动将您上传的语音切片。您可以使用我们制作的[专属工具](https://kevinwang676-test-1.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。为了达到更好的声音克隆效果，中文语音素材需要符合以下**要求**：
+我们的程序能够自动将您上传的语音切片。您可以使用我们制作的[专属工具](https://kevinwang676-voicechangers.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。为了达到更好的声音克隆效果，中文语音素材需要符合以下**要求**：
 
 * 音频尽量是干净人声，不要有BGM，不要有比较大的杂音，不要有一些特殊的声效，比如回声等
 * 声音的情绪尽量稳定，以说话的语料为主，不要是『嗯』『啊』『哈』之类的语气词
@@ -58,3 +60,7 @@ Colab在线快速运行: [Colab笔记本](https://colab.research.google.com/gith
 HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
 
 阿里魔搭社区在线程序：[个人声音定制](https://modelscope.cn/studios/damo/personal_tts/summary) 🎤
+
+### VALL-E X声音克隆
+
+HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
