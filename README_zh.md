@@ -15,7 +15,7 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 ## 2️⃣ 全新中文声音克隆
 > 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在Colab笔记本中更新)
 
-> 08/26/2023更新：VALL-E X声音克隆，支持中日英三语，快速复刻您喜欢的音色，[点击查看]
+> 08/26/2023更新：VALL-E X声音克隆，支持中日英三语，快速复刻您喜欢的音色，[点击查看](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md#vall-e-x%E5%A3%B0%E9%9F%B3%E5%85%8B%E9%9A%86)
 
 ### 训练5分钟，通话不限时！ 🌞
 
