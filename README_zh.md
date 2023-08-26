@@ -63,4 +63,12 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 
 ### VALL-E X声音克隆
 
+Colab在线快速运行: 
+
 HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
+
+
+
+
+
+
