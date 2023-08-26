@@ -17,7 +17,7 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 
 [VALL-E X](https://www.microsoft.com/en-us/research/project/vall-e-x/)是由微软团队开发的支持多语种的语音合成模型，本项目基于Plachtaa的开源项目[VALL-E-X](https://github.com/Plachtaa/VALL-E-X)，进行了用户界面和功能上的优化。
 
-Colab快速启动: [Colab笔记本](https://colab.research.google.com/drive/1rtlnFfcSl2ax4YIFjOSKFvRDdDRpwQse?usp=sharing)
+Colab快速启动: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/VALL_E_X.ipynb)
 
 HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
 
