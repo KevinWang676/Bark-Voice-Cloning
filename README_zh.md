@@ -12,10 +12,17 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 
 #### 如果您喜欢这个项目，请在Github上点赞吧！ ⭐⭐⭐
 
-## 2️⃣ 全新中文声音克隆
-> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在Colab笔记本中更新)
+## 2️⃣ VALL-E X 全新声音克隆
+> 08/26/2023更新：VALL-E X 声音克隆，支持中日英三语；只需3秒语音，即可快速复刻您喜欢的音色
 
-> 08/26/2023更新：VALL-E X声音克隆，支持中日英三语，快速复刻您喜欢的音色，[点击查看](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md#vall-e-x%E5%A3%B0%E9%9F%B3%E5%85%8B%E9%9A%86)
+[VALL-E X](https://www.microsoft.com/en-us/research/project/vall-e-x/)是由
+
+Colab快速启动: [Colab笔记本](https://colab.research.google.com/drive/1rtlnFfcSl2ax4YIFjOSKFvRDdDRpwQse?usp=sharing)
+
+HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
+
+## 3️⃣ SambertHifigan中文声音克隆
+> 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在Colab笔记本中更新)
 
 ### 训练5分钟，通话不限时！ 🌞
 
@@ -60,15 +67,3 @@ Colab在线快速运行: [Colab笔记本](https://colab.research.google.com/gith
 HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
 
 阿里魔搭社区在线程序：[个人声音定制](https://modelscope.cn/studios/damo/personal_tts/summary) 🎤
-
-### VALL-E X声音克隆
-
-Colab在线快速运行: 
-
-HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwang676/VALLE) 🤗
-
-
-
-
-
-
