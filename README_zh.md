@@ -37,7 +37,7 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 * 音频尽量是干净人声，不要有BGM，不要有比较大的杂音，不要有一些特殊的声效，比如回声等
 * 声音的情绪尽量稳定，以说话的语料为主，不要是『嗯』『啊』『哈』之类的语气词
 
-### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb)运行程序：运行所有代码即可。
+### (2) 使用我们的[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb)运行程序：运行所有代码即可。
 
 您可以在Colab笔记本的`推理`代码模块更改中文文本，进而输出您想要的内容。运行笔记本时的**注意事项**：
 
@@ -62,7 +62,7 @@ pip install .
 
 **推荐**🌟 阿里云笔记本在线运行：您也可以**免费**使用阿里云提供的[在线笔记本](https://modelscope.cn/models/damo/speech_personal_sambert-hifigan_nsf_tts_zh-cn_pretrain_16k/summary)进行训练，进入页面后点击右上角的`Notebook快速开发`，选择GPU环境，上传代码文件[阿里云专属笔记本（可下载）](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/%E9%98%BF%E9%87%8C%E4%BA%91%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%AE%AD%E7%BB%83.ipynb)和`.wav`文件素材后就能够以同样的方式运行啦！ 🍻
 
-Colab在线快速运行: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech.ipynb) ⚡
+Colab在线快速运行: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb) ⚡
 
 HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
 
