@@ -15,7 +15,7 @@ _注：(1) Bark声音克隆功能基于[bark-gui](https://github.com/C0untFloyd/
 ## 2️⃣ VALL-E X 全新声音克隆
 > 08/26/2023更新：VALL-E X 声音克隆，支持中日英三语；只需3秒语音，即可快速复刻您喜欢的音色
 
-[VALL-E X](https://www.microsoft.com/en-us/research/project/vall-e-x/)是由微软团队开发的支持多语种的语音合成模型，本项目基于Plachtaa的开源项目[VALL-E-X](https://github.com/Plachtaa/VALL-E-X)，进行了用户界面和功能上的优化。您可以使用我们制作的[专属工具](https://kevinwang676-voicechangers.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。
+[VALL-E X](https://www.microsoft.com/en-us/research/project/vall-e-x/)是由微软团队开发的支持多语种的语音合成模型，此部分基于Plachtaa的开源项目[VALL-E-X](https://github.com/Plachtaa/VALL-E-X)，进行了用户界面和功能上的优化。您可以使用我们制作的[专属工具](https://kevinwang676-voicechangers.hf.space/)从B站直接提取视频中的语音，只需要填写视频的BV号和起止时间。
 
 Colab快速启动: [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/VALL_E_X.ipynb)
 
