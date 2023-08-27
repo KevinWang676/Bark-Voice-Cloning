@@ -24,6 +24,8 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 ## 3️⃣ SambertHifigan中文声音克隆
 > 07/19/2023更新：在执行`pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html`前需要先执行`pip install pysptk --no-build-isolation` (已在对应的Colab笔记本中更新)
 
+> 08/27/2023更新：已修复SambertHifigan对应的Colab Notebook中的所有bug，[点击此处使用](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb)
+
 ### 训练5分钟，通话不限时！ 🌞
 
 因为[Bark](https://github.com/suno-ai/bark)中文文本转语音的功能远远不如英文的效果好，所以我们采用一种新的技术路径[SambertHifigan](https://www.modelscope.cn/models/speech_tts/speech_sambert-hifigan_tts_zh-cn_multisp_pretrain_16k/summary)来实现中文的声音克隆功能。
