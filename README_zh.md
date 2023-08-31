@@ -26,6 +26,8 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 
 > 08/27/2023更新：已修复SambertHifigan对应的Colab Notebook中的所有bug，[点击此处使用](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb)
 
+> 08/31/2023更新：增加SambertHifigan中文声音克隆在线UI[Colab笔记本](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/%E6%9C%80%E6%96%B0%E4%B8%AD%E6%96%87%E5%A3%B0%E9%9F%B3%E5%85%8B%E9%9A%86%E5%9C%A8%E7%BA%BF%E7%89%88.ipynb)，使用更加方便
+
 ### 训练5分钟，通话不限时！ 🌞
 
 因为[Bark](https://github.com/suno-ai/bark)中文文本转语音的功能远远不如英文的效果好，所以我们采用一种新的技术路径[SambertHifigan](https://www.modelscope.cn/models/speech_tts/speech_sambert-hifigan_tts_zh-cn_multisp_pretrain_16k/summary)来实现中文的声音克隆功能。
