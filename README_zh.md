@@ -56,6 +56,12 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 * 点击进入[HuggingFace程序](https://huggingface.co/spaces/kevinwang676/Personal-TTS)，点击右上角的三个圆点，选择`Duplicate this Space`将程序复制到自己的HuggingFace主页
 * 点击进入`Files`，选择右上角`Add file`后，点击`Upload files`，将解压后的文件夹`pretrain_work_dir`从本地直接拖拽上传；需要先删除原有的`pretrain_work_dir`同名文件夹
 
+### (4) 在OpenBayes上运行（09/09更新）
+
+* 点击最新版[Colab笔记本]并将其下载到本地
+* 进入OpenBayes[官网](https://openbayes.com/)，点击`模型训练`和`创建新容器`
+* 在终端中运行`apt install sudo`
+
 ### 四种使用方式 😄
 
 **推荐**🌟 阿里云笔记本在线运行：您也可以**免费**使用阿里云提供的[在线笔记本](https://modelscope.cn/models/damo/speech_personal_sambert-hifigan_nsf_tts_zh-cn_pretrain_16k/summary)进行训练，进入页面后点击右上角的`Notebook快速开发`，选择GPU环境，上传代码文件[阿里云专属笔记本（可下载）](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/%E9%98%BF%E9%87%8C%E4%BA%91%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%AE%AD%E7%BB%83.ipynb)和`.wav`文件素材后就能够以同样的方式运行啦！ 🍻
