@@ -69,3 +69,6 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 ### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)运行（09/09更新）
 
 * 最简洁的操作界面，一键上传语音素材，无需修改代码
+
+![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/7597122b-307f-41de-abdd-454dc0db5271)
+
