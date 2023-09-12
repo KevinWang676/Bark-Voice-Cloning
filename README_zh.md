@@ -72,6 +72,7 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 
 * 最简洁的操作界面，一键上传语音素材，无需修改代码
 * 点击进入[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)，创建新实例，按照操作指南即可快速开启声音克隆之旅 🎶
-* **注意❗：请不要生成会对个人以及组织造成侵害的内容，此程序仅供科研、学习及个人娱乐使用，严禁商业化运作。用户上传的语音及生成的内容均与本代码仓库所有者无关。**
+
+**注意❗：请不要生成会对个人以及组织造成侵害的内容，此程序仅供科研、学习及个人娱乐使用，严禁商业化运作。用户上传的语音及生成的内容均与本代码仓库所有者无关。**
 
 ![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/7597122b-307f-41de-abdd-454dc0db5271)
