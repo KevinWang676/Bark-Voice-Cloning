@@ -28,6 +28,8 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 
 > 09/09/2023更新：增加SambertHifigan中文声音克隆的在线一键启动版 [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)，使用更加方便 🌟
 
+> 09/12/2023更新：增加[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)，支持在线GPU一键部署，快速开启声音克隆之旅 🍻
+
 ### 训练5分钟，通话不限时！ 🌞
 
 因为[Bark](https://github.com/suno-ai/bark)中文文本转语音的功能远远不如英文的效果好，所以我们采用一种新的技术路径[SambertHifigan](https://www.modelscope.cn/models/speech_tts/speech_sambert-hifigan_tts_zh-cn_multisp_pretrain_16k/summary)来实现中文的声音克隆功能。
@@ -66,7 +68,7 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 
 阿里魔搭社区在线程序：[个人声音定制](https://modelscope.cn/studios/damo/personal_tts/summary) 🎤
 
-### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)及[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)运行（09/09更新）
+### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)及[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)运行（最新版）
 
 * 最简洁的操作界面，一键上传语音素材，无需修改代码
 
