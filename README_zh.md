@@ -28,7 +28,7 @@ HuggingFace在线程序: [VALL-E X在线](https://huggingface.co/spaces/kevinwan
 
 > 09/09/2023更新：增加SambertHifigan中文声音克隆的在线一键启动版 [Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)，使用更加方便 🌟
 
-> 09/12/2023更新：增加[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)，支持在线GPU一键部署，快速开启声音克隆之旅 🍻
+> 09/12/2023更新：增加[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-VC)，支持在线GPU一键部署，快速开启声音克隆之旅 🍻
 
 ### 训练5分钟，通话不限时！ 🌞
 
@@ -71,7 +71,7 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 ### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)及[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)运行（最新版）
 
 * 最简洁的操作界面，一键上传语音素材，无需修改代码
-* 点击进入[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-Voice-Cloning)，创建新实例，按照操作指南即可快速开启声音克隆之旅 🎶
+* 点击进入[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-VC)，创建新实例，按照操作指南即可快速开启声音克隆之旅 🎶
 
 **注意❗：请不要生成会对个人以及组织造成侵害的内容，此程序仅供科研、学习及个人娱乐使用，严禁商业化运作。用户上传的语音及生成的内容均与本代码仓库所有者无关。**
 
