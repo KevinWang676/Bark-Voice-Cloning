@@ -381,7 +381,7 @@ while run_server:
 
         restart_server = False
         try:
-            barkgui.queue().launch(show_error=True)
+            barkgui.queue().launch(show_error=True, share=True)
         except:
             restart_server = True
             run_server = False
