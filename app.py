@@ -116,7 +116,7 @@ def generate_text_to_speech(text, selected_speaker, text_temp, waveform_temp, eo
                     else:
                         audio_array = generate_with_settings(text_prompt=text, voice_name=voice_name, semantic_temp=text_temp, coarse_temp=waveform_temp, eos_p=eos_prob)
 
-                # Noticed this in the HF Demo - convert to 16bit int -32767/32767 - most used audio format  
+                # Noticed this in the HF Demo - convert to 16bit int -32767/32767 - most used audio format
                 # audio_array = (audio_array * 32767).astype(np.int16)
 
                 if len(texts) > 1:
@@ -156,7 +156,7 @@ def save_voice(filename, semantic_prompt, coarse_prompt, fine_prompt):
         coarse_prompt=coarse_prompt,
         fine_prompt=fine_prompt
     )
-    
+
 
 def on_quick_gen_changed(checkbox):
     if checkbox == False:
@@ -173,13 +173,13 @@ def delete_output_files(checkbox_state):
 
 # https://stackoverflow.com/a/54494779
 def purgedir(parent):
-    for root, dirs, files in os.walk(parent):                                      
+    for root, dirs, files in os.walk(parent):
         for item in files:
-            # Delete subordinate files                                                 
+            # Delete subordinate files
             filespec = os.path.join(root, item)
             os.unlink(filespec)
         for item in dirs:
-            # Recursively perform this operation for subordinate directories   
+            # Recursively perform this operation for subordinate directories
             purgedir(os.path.join(root, item))
 
 def convert_text_to_ssml(text, selected_speaker):
@@ -221,14 +221,14 @@ def create_version_html():
     python_version = ".".join([str(x) for x in sys.version_info[0:3]])
     versions_html = f"""
 python: <span title="{sys.version}">{python_version}</span>
- • 
+ •
 torch: {getattr(torch, '__long_version__',torch.__version__)}
- • 
+ •
 gradio: {gr.__version__}
 """
     return versions_html
 
-    
+
 
 logger = logging.getLogger(__name__)
 APPTITLE = "Bark Voice Cloning UI"
@@ -325,12 +325,12 @@ while run_server:
                 with gr.Column():
                         seedcomponent = gr.Number(label="Seed (default -1 = Random)", precision=0, value=-1)
                         batchcount = gr.Number(label="Batch count", precision=0, value=1)
-           
+
             with gr.Row():
                 with gr.Column():
                     gr.Markdown("[Voice Prompt Library](https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c)")
                     speaker = gr.Dropdown(speakers_list, value=speakers_list[0], label="Voice (Choose “file” if you wanna use the custom voice)")
-                    
+
                 with gr.Column():
                     text_temp = gr.Slider(0.1, 1.0, value=0.6, label="Generation Temperature", info="1.0 more diverse, 0.1 more conservative")
                     waveform_temp = gr.Slider(0.1, 1.0, value=0.7, label="Waveform temperature", info="1.0 more diverse, 0.1 more conservative")
@@ -367,12 +367,12 @@ while run_server:
             with gr.Row():
                 output_swap = gr.Audio(label="Generated Audio", type="filepath")
 
-   
+
         quick_gen_checkbox.change(fn=on_quick_gen_changed, inputs=quick_gen_checkbox, outputs=complete_settings)
         convert_to_ssml_button.click(convert_text_to_ssml, inputs=[input_text, speaker],outputs=input_text)
         gen_click = tts_create_button.click(generate_text_to_speech, inputs=[input_text, speaker, text_temp, waveform_temp, eos_prob, quick_gen_checkbox, complete_settings, seedcomponent, batchcount],outputs=output_audio)
         button_stop_generation.click(fn=None, inputs=None, outputs=None, cancels=[gen_click])
-        
+
 
 
         swap_voice_button.click(swap_voice_from_audio, inputs=[swap_audio_filename, speaker_swap, swap_tokenizer_lang, swap_seed, swap_batchcount], outputs=output_swap)
@@ -381,7 +381,7 @@ while run_server:
 
         restart_server = False
         try:
-            barkgui.queue().launch(show_error=True, share=True)
+            barkgui.queue().launch(show_error=True)
         except:
             restart_server = True
             run_server = False
