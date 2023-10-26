@@ -11,24 +11,24 @@ def refresh():
 # gradio server ---------------------------
 with gr.Blocks() as server:
   # 面板说明
-  gr.Markdown('# Sambert 语音 训练/推理 服务')
+  gr.Markdown('# ⚡ Sambert声音克隆一键运行')
 
   # 标记
   gr.Markdown('## 数据标注')
   with gr.Row():
-    label_audio_input = gr.Audio(type='filepath', label='请上传一段音频')
-    label_name_input = gr.Textbox(label='数据集命名')
-    label_status_output = gr.Textbox(label='打标状态')
-    label_btn = gr.Button('开始打标')
+    label_audio_input = gr.Audio(type='filepath', label='请上传一段长音频（一分钟左右即可）')
+    label_name_input = gr.Textbox(label='角色命名')
+    label_status_output = gr.Textbox(label='标注状态')
+    label_btn = gr.Button('开始标注', variant='primary')
 
   # 训练
   gr.Markdown('## 训练')
   with gr.Row():
-    train_dataset_input = gr.Radio(label='数据集选择', choices=get_dataset_list())
-    train_name_input = gr.Textbox(label='模型保存名称')
+    train_dataset_input = gr.Radio(label='角色选择', choices=get_dataset_list())
+    train_name_input = label_name_input + '推理模型' # gr.Textbox(label='模型保存名称')
     train_steps_input = gr.Number(label='训练步数, 需要为20的整数倍')
     train_status_output = gr.Text(label='训练状态')
-    train_btn = gr.Button('训练')
+    train_btn = gr.Button('开始训练')
     dataset_delete_btn = gr.Button('删除数据集', variant='stop')
 
   # 推理
@@ -38,8 +38,8 @@ with gr.Blocks() as server:
   with gr.Row():
     infer_name_input = gr.Radio(label='推理模型选择', choices=get_model_list())
     infer_txt_input = gr.Textbox(label='文本', lines=3)
-    infer_audio_output = gr.Audio(type='filepath', label='合成的音频')
-    infer_btn = gr.Button('生成语音', variant='primary')
+    infer_audio_output = gr.Audio(type='filepath', label='为您合成的音频')
+    infer_btn = gr.Button('开始语音合成', variant='primary')
     model_delete_btn = gr.Button('删除模型', variant='stop')
 
   # 逻辑部分
