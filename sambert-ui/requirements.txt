@@ -1,0 +1,17 @@
+modelscope==1.9.2
+
+# 训练/推理依赖
+# 同时需要额外补充:
+# 1. pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+pytorch_wavelets==1.3.0
+tensorboardX===2.6.2.2
+bitstring==4.1.2
+
+# sambert 标注依赖
+# 同时需要额外补充:
+# pip install tts-autolabel -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+# sox 需要单独安装，参考: https://pysox.readthedocs.io/en/latest/#installation
+openai-whisper==20230918
+librosa==0.10.1
+scipy==1.11.3
+sox==1.4.1
