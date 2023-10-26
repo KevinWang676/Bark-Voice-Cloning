@@ -1,6 +1,6 @@
 # Bark Voice Cloning 🐶 & Voice Cloning for Chinese Speech 🎶
 
-> 10/19/2023: Fixed `ERROR: Exception in ASGI application` by specifying `gradio==3.33.0` and `gradio_client==0.2.7` in [requirements.txt](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/requirements.txt)
+> 10/19/2023: Fixed `ERROR: Exception in ASGI application` by specifying `gradio==3.33.0` and `gradio_client==0.2.7` in [requirements.txt](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/requirements.txt).
 
 > 10/26/2023: Integrated labeling, training and inference into an easy-to-use user interface of SambertHifigan. Thanks to [wujohns](https://github.com/wujohns).
 ### [简体中文](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md)
