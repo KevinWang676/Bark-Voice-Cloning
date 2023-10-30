@@ -8,7 +8,7 @@ Based on [bark-gui](https://github.com/C0untFloyd/bark-gui) and [bark](https://g
 
 Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
-HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗
+HuggingFace Demo: [Bark Voice Cloning](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗 (Need a GPU)
 
 If you would like to run the code locally, remember to replace the original path `/content/Bark-Voice-Cloning/bark/assets/prompts/file.npz` with the path of `file.npz` in your own computer.
 
