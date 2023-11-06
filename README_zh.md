@@ -68,7 +68,7 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 
 阿里魔搭社区在线程序：[个人声音定制](https://modelscope.cn/studios/damo/personal_tts/summary) 🎤
 
-### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)及[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-VC)运行（最新版）
+### 最新[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Sambert_Voice_Cloning_in_One_Click.ipynb)（有时会不稳定）及[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-VC)运行（推荐）
 
 * 最简洁的操作界面，一键上传语音素材，无需修改代码
 * 点击进入[AutoDL镜像](https://www.codewithgpu.com/i/KevinWang676/Bark-Voice-Cloning/Sambert-VC)，创建新实例，按照操作指南即可快速开启声音克隆之旅 🎶
