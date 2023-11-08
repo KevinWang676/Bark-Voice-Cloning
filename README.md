@@ -4,7 +4,7 @@
 
 > 10/19/2023: Fixed `ERROR: Exception in ASGI application` by specifying `gradio==3.33.0` and `gradio_client==0.2.7` in [requirements.txt](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/requirements.txt).
 
-> 11/07/2023：Integrated [KNN-VC](https://github.com/bshall/knn-vc) into this repository and created an easy-to-use [Gradio interface](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/KNN_VC.ipynb).
+> 11/08/2023：Integrated [KNN-VC](https://github.com/bshall/knn-vc) into [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) and created an easy-to-use [Gradio interface](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/OpenAI_TTS_KNN_VC_en.ipynb).
 
 Based on [bark-gui](https://github.com/C0untFloyd/bark-gui) and [bark](https://github.com/suno-ai/bark). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
 
