@@ -4,7 +4,7 @@
 
 > 11/08/2023更新：将AI变声模型[KNN-VC](https://github.com/bshall/knn-vc)与最新发布的[OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech)结合，实现更加真实的AI变声，您可以[在线体验](https://huggingface.co/spaces/kevinwang676/OpenAI-TTS-Voice-Conversion)或在[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/OpenAI_TTS_KNN_VC.ipynb)中运行
 
-> 11/12/2023计划更新：计划将声音转换模型[RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)与最新发布的[OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech)结合
+> 11/12/2023计划更新：计划将声音转换模型[RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)与最新发布的[OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech)结合，正在制作中
 
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
