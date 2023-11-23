@@ -6,6 +6,8 @@
 
 > 11/13/2023更新：将声音转换模型[RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)与最新发布的[OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech)结合，您可以使用[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/OpenAI_TTS_RVC.ipynb)运行，点击[这里](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/e7fa4d21-d616-41b1-be34-5d420f65c943)试听效果
 
+> 11/23/2023更新：Sambert声音克隆在线体验的bug已修复，[点击使用](https://huggingface.co/spaces/kevinwang676/Personal-TTS)
+
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
 HuggingFace在线程序：[Bark声音克隆](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗
