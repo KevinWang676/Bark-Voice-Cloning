@@ -8,7 +8,7 @@
 
 > 11/23/2023更新：Sambert声音克隆在线体验的bug已修复，[点击使用](https://huggingface.co/spaces/kevinwang676/Personal-TTS)
 
-> 11/29/2023更新：ChatGLM2神里绫华模型+Bert-VITS2文本转语音，和绫华一起谈天说地吧，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/ChatGLM2_linghua_VITS2.ipynb)运行
+> 11/29/2023更新：ChatGLM2神里绫华模型+Bert-VITS2文本转语音，和绫华一起谈天说地吧，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/ChatGLM2_linghua_VITS2.ipynb)运行，[在线使用](https://kevinwang676-chatglm-bert-vits2.hf.space)
 
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
