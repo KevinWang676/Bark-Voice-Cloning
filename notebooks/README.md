@@ -96,3 +96,63 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS ptuning/main.py \
 ```
 
 P.S. 以上的 `train_chat.sh` 文件只是一个示例，具体参数设置请根据不同GPU的性能进行调节；ChatGLM2微调[官方教程](https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning)
+
+# ChatGLM3微调指南 📒
+
+## 1. 环境搭建
+### 安装依赖
+```
+git clone https://github.com/THUDM/ChatGLM3
+cd ChatGLM3
+pip install -r requirements.txt
+pip install transformers==4.34.0
+apt install nvidia-cuda-toolkit
+cd finetune_chatmodel_demo
+pip install -r requirements.txt
+cd ..
+```
+### 下载模型
+```
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+sudo apt install build-essential
+git clone https://huggingface.co/THUDM/chatglm3-6b
+```
+## 2. 准备数据集
+
+自建数据集请参考[train.json](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/train.json)及以下格式：
+```json
+[
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "<system prompt text>"
+      },
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response text>"
+      }, 
+       // ... Muti Turn
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response text>"
+      }
+    ]
+  }
+  // ...
+]
+```
+
+
+分别准备训练数据集 `train.json` 和验证数据集 `dev.json` 并将其上传至 `ChatGLM3` 文件夹下
+
+
