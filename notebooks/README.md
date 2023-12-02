@@ -28,13 +28,12 @@ git clone https://huggingface.co/THUDM/chatglm2-6b
 
 ## 3. 开始训练
 
-在终端运行指令
+在终端运行以下指令，即可开始训练
 ```shell
 bash train_chat.sh
 ```
-即可开始训练
 
-原 `train_chat.sh` 文件中包含以下代码：
+**注意**：原 `train_chat.sh` 文件中包含以下代码：
 ```
 PRE_SEQ_LEN=128
 LR=1e-2
@@ -65,7 +64,7 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --pre_seq_len $PRE_SEQ_LEN \
     --quantization_bit 4
 ```
-在开始训练前，需要将其编辑为以下代码：
+**在开始训练前，需要将其编辑为以下示例代码**：
 ```
 PRE_SEQ_LEN=128
 LR=1e-2
@@ -96,4 +95,4 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS ptuning/main.py \
     --pre_seq_len $PRE_SEQ_LEN
 ```
 
-P.S. 以上的 `train_chat.sh` 文件只是一个示例，具体参数设置需要根据不同显卡的性能进行调节；ChatGLM2微调[官方教程](https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning)
+P.S. 以上的 `train_chat.sh` 文件只是一个示例，具体参数设置请根据不同GPU的性能进行调节；ChatGLM2微调[官方教程](https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning)
