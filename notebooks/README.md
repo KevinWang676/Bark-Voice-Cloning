@@ -120,7 +120,7 @@ git clone https://huggingface.co/THUDM/chatglm3-6b
 ```
 ## 2. 准备数据集
 
-自建数据集请参考[train.json](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/train.json)及以下格式：
+自建数据集请参考[train_linghua_new_v3.json](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/train_linghua_new_v3.json)及以下格式：
 ```json
 [
   {
@@ -153,6 +153,6 @@ git clone https://huggingface.co/THUDM/chatglm3-6b
 ```
 
 
-分别准备训练数据集 `train.json` 和验证数据集 `dev.json` 并将其上传至 `ChatGLM3` 文件夹下
+准备训练数据集 `train.json` 并将其上传至 `ChatGLM3` 文件夹下
 
 
