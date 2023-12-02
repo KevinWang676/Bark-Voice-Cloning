@@ -220,7 +220,7 @@ DATESTR=`date +%Y%m%d-%H%M%S`
 RUN_NAME=linghua_pt
 
 BASE_MODEL_PATH=chatglm3-6b
-DATASET_PATH=train_linghua_new_v3.json
+DATASET_PATH=train.json
 OUTPUT_DIR=output/${RUN_NAME}-${DATESTR}-${PRE_SEQ_LEN}-${LR}
 
 mkdir -p $OUTPUT_DIR
@@ -240,3 +240,4 @@ torchrun --standalone --nnodes=1 --nproc_per_node=$NUM_GPUS finetune_chatmodel_d
     --learning_rate $LR \
     --pre_seq_len $PRE_SEQ_LEN 2>&1 | tee ${OUTPUT_DIR}/train.log
 ```
+P.S. 以上的 `finetune_pt_multiturn.sh` 文件只是一个示例，具体参数设置请根据不同GPU的性能进行调节；ChatGLM3微调[官方教程](https://github.com/THUDM/ChatGLM3/tree/main/finetune_chatmodel_demo)
