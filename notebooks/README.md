@@ -27,7 +27,14 @@ git clone https://huggingface.co/THUDM/chatglm2-6b
 分别准备训练数据集 `train.json` 和验证数据集 `dev.json` 并将其上传至 `ChatGLM2-6B` 文件夹下
 
 ## 3. 开始训练
-`train_chat.sh` 中包含以下代码：
+
+在终端运行指令
+```shell
+bash train_chat.sh
+```
+即可开始训练
+
+原 `train_chat.sh` 文件中包含以下代码：
 ```
 PRE_SEQ_LEN=128
 LR=1e-2
@@ -58,9 +65,35 @@ torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --pre_seq_len $PRE_SEQ_LEN \
     --quantization_bit 4
 ```
-
-在终端运行指令：
-```shell
-bash train_chat.sh
+在开始训练前，需要将其编辑为以下代码：
 ```
-即可开始训练
+PRE_SEQ_LEN=128
+LR=1e-2
+NUM_GPUS=1
+
+torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS ptuning/main.py \
+    --do_train \
+    --train_file train.json \
+    --validation_file dev.json \
+    --preprocessing_num_workers 10 \
+    --prompt_column prompt \
+    --response_column response \
+    --history_column history \
+    --overwrite_cache \
+    --model_name_or_path chatglm2-6b \
+    --output_dir output_model \
+    --overwrite_output_dir \
+    --max_source_length 1024 \
+    --max_target_length 1024 \
+    --per_device_train_batch_size 1 \
+    --per_device_eval_batch_size 1 \
+    --gradient_accumulation_steps 16 \
+    --predict_with_generate \
+    --max_steps 600 \
+    --logging_steps 10 \
+    --save_steps 100 \
+    --learning_rate $LR \
+    --pre_seq_len $PRE_SEQ_LEN
+```
+
+P.S. 以上的 `train_chat.sh` 文件只是一个示例，具体参数设置需要根据不同显卡的性能进行调节；ChatGLM2微调[官方教程](https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning)
