@@ -18,7 +18,7 @@ git clone https://huggingface.co/THUDM/chatglm2-6b
 
 ## 2. 准备数据集
 
-数据集格式参考：
+自建数据集请参考以下格式及[train.json](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/train.json)：
 ```json lines
 {"prompt": "长城h3风扇不转。继电器好的。保险丝好的传感器新的风扇也新的这是为什么。就是继电器缺一个信号线", "response": "用电脑能读数据流吗？水温多少", "history": []}
 {"prompt": "95", "response": "上下水管温差怎么样啊？空气是不是都排干净了呢？", "history": [["长城h3风扇不转。继电器好的。保险丝好的传感器新的风扇也新的这是为什么。就是继电器缺一个信号线", "用电脑能读数据流吗？水温多少"]]}
