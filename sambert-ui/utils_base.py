@@ -42,13 +42,13 @@ def get_model_list():
   return sub_dirs
 
 # 确保对应的空目录存在
-def ensure_empty_dir (dirpath):
+def ensure_empty_dir(dirpath):
   if shutil.os.path.exists(dirpath):
     shutil.rmtree(dirpath)
   shutil.os.makedirs(dirpath)
 
 # 获取目录中的最后一个文件
-def get_last_file (dirpath):
+def get_last_file(dirpath):
   files = glob.glob(os.path.join(dirpath, '*'))
   sorted_files = sorted(files, key=os.path.basename)
   if sorted_files:
