@@ -11,7 +11,9 @@ def refresh():
 # gradio server ---------------------------
 with gr.Blocks() as server:
   # 面板说明
-  gr.Markdown('# ⚡ Sambert声音克隆一键运行')
+  gr.Markdown("# <center>🌊💕🎶 Sambert UI 声音克隆</center>")
+  gr.Markdown("## <center>🌟 - 训练5分钟，通话不限时！AI真实拟声，支持中英双语！ </center>")      
+  gr.Markdown("### <center>🍻 - 更多精彩应用，尽在[滔滔AI](http://www.talktalkai.com)；滔滔AI，为爱滔滔！💕</center>")
 
   # 标记
   gr.Markdown('## 数据标注')
@@ -25,7 +27,7 @@ with gr.Blocks() as server:
   gr.Markdown('## 训练')
   with gr.Row():
     train_dataset_input = gr.Radio(label='角色选择', choices=get_dataset_list())
-    train_name_input = label_name_input + '推理模型' # gr.Textbox(label='模型保存名称')
+    train_name_input = label_name_input
     train_steps_input = gr.Number(label='训练步数, 需要为20的整数倍')
     train_status_output = gr.Text(label='训练状态')
     train_btn = gr.Button('开始训练')
@@ -80,3 +82,5 @@ with gr.Blocks() as server:
   )
 
 server.launch(server_port=consts.port, server_name='0.0.0.0')
+
+# 如果需要在线链接，可将最后一行代码改为：server.launch(share=True, show_error=True)
