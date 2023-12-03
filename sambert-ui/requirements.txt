@@ -15,3 +15,4 @@ openai-whisper==20230918
 librosa==0.10.1
 scipy==1.11.3
 sox==1.4.1
+gradio
