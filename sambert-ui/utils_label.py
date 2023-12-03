@@ -58,35 +58,32 @@ def split_long_audio(model, filepaths, save_path, out_sr=44100):
 
 # 自动标注与标注后的文件打包 --------------------------------------------
 def auto_label(audio, name):
-  try:
-    if not audio or not name:
-      return '', gr.update(choices=get_dataset_list())
+  if not audio or not name:
+    return '', gr.update(choices=get_dataset_list())
 
-    # 创建临时目录用于存放分割后的音频与再次标注的信息
-    input_wav = getAbsPath(f'./temp/input-{ uuid.uuid4() }')
-    ensure_empty_dir(input_wav)
+  # 创建临时目录用于存放分割后的音频与再次标注的信息
+  input_wav = getAbsPath(f'./temp/input-{ uuid.uuid4() }')
+  ensure_empty_dir(input_wav)
 
-    work_dir = os.path.join(datasets_dir, name)
-    ensure_empty_dir(work_dir)
+  work_dir = os.path.join(datasets_dir, name)
+  ensure_empty_dir(work_dir)
 
-    # 音频分割
-    split_long_audio(whisper_model, audio, input_wav)
+  # 音频分割
+  split_long_audio(whisper_model, audio, input_wav)
 
-    # 音频自动标注
-    # 第一次会自动下载对应的模型
-    run_auto_label(
-      input_wav=input_wav,
-      work_dir=work_dir,
-      resource_revision='v1.0.7'
-    )
+  # 音频自动标注
+  # 第一次会自动下载对应的模型
+  run_auto_label(
+    input_wav=input_wav,
+    work_dir=work_dir,
+    resource_revision='v1.0.7'
+  )
 
-    # 移除目录
-    shutil.rmtree(input_wav)
+  # 移除目录
+  shutil.rmtree(input_wav)
 
-    # 返回结果
-    return '打标成功', gr.update(choices=get_dataset_list())
-  except Exception:
-    return '打标失败', gr.update(choices=get_dataset_list())
+  # 返回结果
+  return '打标成功', gr.update(choices=get_dataset_list())
   
 # 删除数据集 ----------------------------------------------------
 # name - 删除的数据集名称
