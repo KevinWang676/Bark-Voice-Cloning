@@ -10,6 +10,8 @@
 
 > 12/01/2023更新：ChatGLM2神里绫华模型+Bert-VITS2文本转语音，和绫华一起谈天说地吧，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/ChatGLM2_linghua_VITS2.ipynb)运行，[在线使用](https://kevinwang676-chatglm2-bert-vits2-lh.hf.space)
 
+> 12//03/2023更新：Sambert声音克隆本地部署教程已上传，[点击查看](https://github.com/KevinWang676/Bark-Voice-Cloning/tree/main/notebooks)
+
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
 HuggingFace在线程序：[Bark声音克隆](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗
