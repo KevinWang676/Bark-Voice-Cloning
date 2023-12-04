@@ -15,7 +15,7 @@ apt-get install sox
 
 安装PyTorch环境（若已安装PyTorch，可跳过此步）
 ```
-%pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchtext==0.14.1 torchaudio==0.13.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchtext==0.14.1 torchaudio==0.13.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
 ## 2. 加载 Sambert UI
