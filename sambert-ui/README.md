@@ -13,6 +13,11 @@ pip install tts-autolabel -f https://modelscope.oss-cn-beijing.aliyuncs.com/rele
 apt-get install sox
 ```
 
+安装PyTorch环境 
+```
+%pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchtext==0.14.1 torchaudio==0.13.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu117
+```
+
 ## 2. 加载 Sambert UI
 ```
 python app.py
