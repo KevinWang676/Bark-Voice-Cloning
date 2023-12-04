@@ -1,5 +1,5 @@
 # Sambert UI 使用指南 📒
-#### [Colab](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb) 在线使用 Sambert UI
+### [Colab](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb) 在线使用 Sambert UI
 ## 1. 环境配置
 
 ```
