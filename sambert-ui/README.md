@@ -10,7 +10,7 @@ pip install -r requirements.txt
 sudo apt install build-essential
 pip install kantts -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
 pip install tts-autolabel -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
-apt-get install sox
+apt-get install sox # 也可以选择 pip install sox 来安装sox依赖
 ```
 
 安装PyTorch环境（若已安装PyTorch，可跳过此步）
