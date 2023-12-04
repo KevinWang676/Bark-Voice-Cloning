@@ -17,3 +17,5 @@ apt-get install sox
 ```
 python app.py
 ```
+
+![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/f39879c0-5557-4a50-8604-737373ed1647)
