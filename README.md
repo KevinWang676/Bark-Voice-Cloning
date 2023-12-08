@@ -12,7 +12,7 @@ Based on [bark-gui](https://github.com/C0untFloyd/bark-gui) and [bark](https://g
 
 **HuggingFace Demo**: [**Bark Voice Cloning**](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning) 🤗 (Need a GPU)
 
-**Demo Video**: [**YTB Video**](https://www.youtube.com/watch?v=IAf695dhkUc&t=4s)
+**Demo Video**: [**YouTube Video**](https://www.youtube.com/watch?v=IAf695dhkUc&t=4s)
 
 If you would like to run the code locally, remember to replace the original path `/content/Bark-Voice-Cloning/bark/assets/prompts/file.npz` with the path of `file.npz` in your own computer.
 
