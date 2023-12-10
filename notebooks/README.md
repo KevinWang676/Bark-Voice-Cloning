@@ -241,3 +241,22 @@ torchrun --standalone --nnodes=1 --nproc_per_node=$NUM_GPUS finetune_chatmodel_d
     --pre_seq_len $PRE_SEQ_LEN 2>&1 | tee ${OUTPUT_DIR}/train.log
 ```
 P.S. 以上的 `finetune_pt_multiturn.sh` 文件只是一个示例，具体参数设置请根据不同GPU的性能进行调节；ChatGLM3微调[官方教程](https://github.com/THUDM/ChatGLM3/tree/main/finetune_chatmodel_demo)
+
+
+# AI Agent 使用指南 🌟
+
+## 1. 环境搭建
+### 安装依赖
+```
+git clone https://github.com/KevinWang676/modelscope-agent.git
+cd modelscope-agent
+pip install -r requirements.txt
+mv /content/modelscope-agent/modelscope_agent /content/modelscope-agent/apps/agentfabric
+apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+cd apps/agentfabric
+```
+
+## 2. 开始使用
+```
+python app.py
+```
