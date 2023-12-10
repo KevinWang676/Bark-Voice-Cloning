@@ -251,7 +251,7 @@ P.S. 以上的 `finetune_pt_multiturn.sh` 文件只是一个示例，具体参�
 git clone https://github.com/KevinWang676/modelscope-agent.git
 cd modelscope-agent
 pip install -r requirements.txt
-mv /content/modelscope-agent/modelscope_agent /content/modelscope-agent/apps/agentfabric
+mv modelscope_agent apps/agentfabric
 apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 cd apps/agentfabric
 ```
