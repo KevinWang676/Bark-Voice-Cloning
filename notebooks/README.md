@@ -1,5 +1,6 @@
 # ChatGLM2微调指南 💡
 #### ChatGLM3微调[见下方](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/README.md#chatglm3%E5%BE%AE%E8%B0%83%E6%8C%87%E5%8D%97-)
+#### AI Agent搭建[见下方](https://github.com/KevinWang676/Bark-Voice-Cloning/tree/main/notebooks#ai-agent-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97-)
 ## 1. 环境搭建
 ### 安装依赖
 ```
