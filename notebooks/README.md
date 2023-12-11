@@ -256,6 +256,12 @@ mv modelscope_agent apps/agentfabric
 apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 cd apps/agentfabric
 ```
+### API Key设置
+```
+import os
+os.environ["DASHSCOPE_API_KEY"] = "您的DASHSCOPE_API_KEY"
+```
+或
 
 ## 2. 开始使用
 ```
