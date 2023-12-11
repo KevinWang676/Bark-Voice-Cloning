@@ -262,6 +262,7 @@ import os
 os.environ["DASHSCOPE_API_KEY"] = "您的DASHSCOPE_API_KEY"
 ```
 或
+`export DASHSCOPE_API_KEY=your_api_key`
 
 ## 2. 开始使用
 ```
