@@ -83,7 +83,7 @@ def auto_label(audio, name):
   shutil.rmtree(input_wav)
 
   # 返回结果
-  return '打标成功', gr.update(choices=get_dataset_list())
+  return '标注成功', gr.update(choices=get_dataset_list())
   
 # 删除数据集 ----------------------------------------------------
 # name - 删除的数据集名称
