@@ -35,7 +35,7 @@ If you would like to run the code locally, remember to replace the original path
 
 We want to point out that [Bark](https://github.com/suno-ai/bark) is very good at generating English speech but relatively poor at generating Chinese speech. So we'd like to adopt another approach, which is called [SambertHifigan](https://www.modelscope.cn/models/speech_tts/speech_sambert-hifigan_tts_zh-cn_multisp_pretrain_16k/summary), to realizing voice cloning for Chinese speech. Please check out our [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb) for the implementation.
 
-Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Voice_Cloning_for_Chinese_Speech_v2.ipynb) ⚡
+Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb) ⚡
 
 HuggingFace demo: [Voice Cloning for Chinese Speech](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
 
