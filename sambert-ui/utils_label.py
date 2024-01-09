@@ -76,7 +76,7 @@ def auto_label(audio, name):
   run_auto_label(
     input_wav=input_wav,
     work_dir=work_dir,
-    resource_revision='v1.0.7'
+    resource_revision='v1.0.9'
   )
 
   # 移除目录
