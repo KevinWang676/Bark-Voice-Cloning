@@ -11,7 +11,7 @@ def refresh():
 # gradio server ---------------------------
 with gr.Blocks() as server:
   # 面板说明
-  gr.Markdown("# <center>🌊💕🎶 Sambert UI 声音克隆</center>")
+  gr.Markdown("# <center>🌊💕🎶 Sambert UI 一分钟声音克隆</center>")
   gr.Markdown("## <center>🌟 - 训练5分钟，通话不限时！AI真实拟声，支持中英双语！ </center>")      
   gr.Markdown("### <center>🍻 - 更多精彩应用，尽在[滔滔AI](http://www.talktalkai.com)；滔滔AI，为爱滔滔！💕</center>")
 
