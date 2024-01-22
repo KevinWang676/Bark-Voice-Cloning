@@ -23,6 +23,6 @@ pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchtext==0.14.1 torc
 python app.py
 ```
 
-开启 Sambert 中英声音克隆之旅吧 💕
+开启 **Sambert** 中英声音克隆之旅吧 💕
 
 ![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/5b97ee5f-2595-46d9-97d2-d41984c583f5)
