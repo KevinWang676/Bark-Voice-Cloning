@@ -14,7 +14,7 @@
 
 > 01/06/2024更新：NeuCoSVC声音转换，无需训练、一键AI翻唱任意歌手的任意歌曲。点击[在线使用](https://kevinwang676-neucosvc-colab.hf.space)，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/NeuCoSVC.ipynb)
 
-> 01/20/2024更新：GPT-SoVITS声音克隆，只需一分钟语音，“完美”复刻任何声音。点击[在线体验](https://kevinwang676-gpt-sovits-jay.hf.space)，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/GPT_SoVITS.ipynb)
+> 01/20/2024更新：GPT-SoVITS声音克隆，只需一分钟语音，“完美”复刻任何声音。点击[在线体验](https://kevinwang676-gpt-sovits-jay.hf.space)，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/GPT_SoVITS.ipynb)，[视频教程](https://www.bilibili.com/video/BV1pb4y1N79s)
 
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
