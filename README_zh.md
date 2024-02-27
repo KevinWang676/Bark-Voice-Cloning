@@ -16,7 +16,7 @@
 
 > 01/20/2024更新：GPT-SoVITS声音克隆，只需一分钟语音，“完美”复刻任何声音。点击[在线体验](https://kevinwang676-gpt-sovits-jay.hf.space)，点击[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/GPT_SoVITS.ipynb)，[视频教程](https://www.bilibili.com/video/BV1pb4y1N79s)
 
-> 02/27/2024更新：AI歌手全明星在线训练+翻唱上线啦！第一个完全免费、开源的AI歌手模型社区，全网AI歌手任您选择！点击访问[滔滔AI](https://www.talktalkai.com/)解锁全部内容，感谢[OpenXLab](https://openxlab.org.cn/apps)的算力支持！💕
+> 02/27/2024更新：**AI歌手全明星**在线训练+翻唱上线啦！第一个完全**免费**、**开源**的AI歌手模型社区，全网AI歌手任您选择！点击访问[**滔滔AI**](https://www.talktalkai.com/)解锁全部内容，感谢[OpenXLab](https://openxlab.org.cn/apps)的算力支持！💕
 
 在线快速运行：[Colab笔记本](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/Bark_Voice_Cloning.ipynb) ⚡
 
