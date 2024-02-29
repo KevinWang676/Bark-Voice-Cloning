@@ -1,5 +1,4 @@
-# I'm LYX
-
+# I'm LY
 # Bark Voice Cloning 🐶 & Voice Cloning for Chinese Speech 🎶
 ### [简体中文](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/README_zh.md)
 ## 1️⃣ Bark Voice Cloning
@@ -7,7 +6,6 @@
 > 10/19/2023: Fixed `ERROR: Exception in ASGI application` by specifying `gradio==3.33.0` and `gradio_client==0.2.7` in [requirements.txt](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/requirements.txt).
 
 > 11/08/2023: Integrated [KNN-VC](https://github.com/bshall/knn-vc) into [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) and created an easy-to-use Gradio interface. Try it [here](https://colab.research.google.com/github/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/OpenAI_TTS_KNN_VC_en.ipynb).
-
 > 02/27/2024: We are thrilled to launch our most powerful **AI song cover generator** ever with [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)! Just need to provide the name of a song and our application running on an **A100** GPU will handle everything else. Check it out in our [**website**](https://www.talktalkai.com/) (please click "EN" in the first tab of our website to see the english version)! 💕
 
    Based on [bark-gui](https://github.com/C0untFloyd/bark-gui) and [bark](https://github.com/suno-ai/bark). Thanks to [C0untFloyd](https://github.com/C0untFloyd).
