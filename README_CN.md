@@ -76,19 +76,19 @@ python app.py
 为保持旧链接正常工作，原始笔记本路径保留为 **符号链接**。
 
 ### TTS / 声音克隆笔记本
-- **Bark**：`notebooks/tts/Bark_Voice_Cloning.ipynb`、`notebooks/tts/Bark_Coqui.ipynb`
-- **Sambert / 中文声音克隆**：`notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb`、`notebooks/tts/SambertHifigan.ipynb`、`notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb`、`sambert-ui/Sambert_UI.ipynb`
-- **GPT-SoVITS**：`notebooks/tts/GPT_SoVITS.ipynb`（+ 多个版本）
-- **XTTS**：`notebooks/tts/XTTS_Colab.ipynb`
-- **VALL‑E X**：`notebooks/tts/VALL_E_X.ipynb`
-- **F5‑TTS**：`notebooks/tts/F5_TTS.ipynb`、`notebooks/tts/F5_TTS_Training.ipynb`
-- **CosyVoice**：`notebooks/tts/CosyVoice.ipynb`、`notebooks/tts/CosyVoice2.ipynb`
-- **其他**：`notebooks/tts/OpenVoice.ipynb`、`notebooks/tts/Seamless_Meta.ipynb`
+- **Bark**：[`Bark_Voice_Cloning.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Voice_Cloning.ipynb)、[`Bark_Coqui.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Coqui.ipynb)
+- **Sambert / 中文声音克隆**：[`Voice_Cloning_for_Chinese_Speech_v2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb)、[`SambertHifigan.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/SambertHifigan.ipynb)、[`Sambert_Voice_Cloning_in_One_Click.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb)、[`Sambert_UI.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb)
+- **GPT-SoVITS**：[`GPT_SoVITS.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS.ipynb)、[`GPT_SoVITS_2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_2.ipynb)、[`GPT_SoVITS_emo.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_emo.ipynb)、[`GPT_SoVITS_v2_0808.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v2_0808.ipynb)、[`GPT_SoVITS_v3.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v3.ipynb)、[`GPT_SoVITS_v3_03_30.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v3_03_30.ipynb)、[`GPT_SoVITS_v4.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v4.ipynb)
+- **XTTS**：[`XTTS_Colab.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/XTTS_Colab.ipynb)
+- **VALL‑E X**：[`VALL_E_X.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/VALL_E_X.ipynb)
+- **F5‑TTS**：[`F5_TTS.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/F5_TTS.ipynb)、[`F5_TTS_Training.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/F5_TTS_Training.ipynb)
+- **CosyVoice**：[`CosyVoice.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/CosyVoice.ipynb)、[`CosyVoice2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/CosyVoice2.ipynb)
+- **其他**：[`OpenVoice.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/OpenVoice.ipynb)、[`Seamless_Meta.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Seamless_Meta.ipynb)
 
 ### 变声（VC）笔记本
-- **KNN‑VC**：`notebooks/vc/KNN_VC.ipynb`
-- **NeuCoSVC**：`notebooks/vc/NeuCoSVC*.ipynb`
-- **OpenAI TTS + VC**：`notebooks/vc/OpenAI_TTS_KNN_VC*.ipynb`、`notebooks/vc/OpenAI_TTS_RVC.ipynb`
+- **KNN‑VC**：[`KNN_VC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/KNN_VC.ipynb)
+- **NeuCoSVC**：[`NeuCoSVC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/NeuCoSVC.ipynb)、[`NeuCoSVC_v2_先享版.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/NeuCoSVC_v2_先享版.ipynb)
+- **OpenAI TTS + VC**：[`OpenAI_TTS_KNN_VC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_KNN_VC.ipynb)、[`OpenAI_TTS_KNN_VC_en.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_KNN_VC_en.ipynb)、[`OpenAI_TTS_RVC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_RVC.ipynb)
 
 ## 目录结构
 ```text

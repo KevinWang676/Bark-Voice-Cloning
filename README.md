@@ -76,19 +76,19 @@ Voice-related notebooks are grouped under:
 To keep older links working, the original notebook paths are kept as **symlinks**.
 
 ### TTS / Voice cloning notebooks
-- **Bark**: `notebooks/tts/Bark_Voice_Cloning.ipynb`, `notebooks/tts/Bark_Coqui.ipynb`
-- **Sambert / Chinese voice cloning**: `notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb`, `notebooks/tts/SambertHifigan.ipynb`, `notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb`, `sambert-ui/Sambert_UI.ipynb`
-- **GPT-SoVITS**: `notebooks/tts/GPT_SoVITS.ipynb` (+ variants)
-- **XTTS**: `notebooks/tts/XTTS_Colab.ipynb`
-- **VALL‑E X**: `notebooks/tts/VALL_E_X.ipynb`
-- **F5‑TTS**: `notebooks/tts/F5_TTS.ipynb`, `notebooks/tts/F5_TTS_Training.ipynb`
-- **CosyVoice**: `notebooks/tts/CosyVoice.ipynb`, `notebooks/tts/CosyVoice2.ipynb`
-- **Other**: `notebooks/tts/OpenVoice.ipynb`, `notebooks/tts/Seamless_Meta.ipynb`
+- **Bark**: [`Bark_Voice_Cloning.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Voice_Cloning.ipynb), [`Bark_Coqui.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Coqui.ipynb)
+- **Sambert / Chinese voice cloning**: [`Voice_Cloning_for_Chinese_Speech_v2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb), [`SambertHifigan.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/SambertHifigan.ipynb), [`Sambert_Voice_Cloning_in_One_Click.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb), [`Sambert_UI.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb)
+- **GPT-SoVITS**: [`GPT_SoVITS.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS.ipynb), [`GPT_SoVITS_2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_2.ipynb), [`GPT_SoVITS_emo.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_emo.ipynb), [`GPT_SoVITS_v2_0808.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v2_0808.ipynb), [`GPT_SoVITS_v3.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v3.ipynb), [`GPT_SoVITS_v3_03_30.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v3_03_30.ipynb), [`GPT_SoVITS_v4.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/GPT_SoVITS_v4.ipynb)
+- **XTTS**: [`XTTS_Colab.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/XTTS_Colab.ipynb)
+- **VALL‑E X**: [`VALL_E_X.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/VALL_E_X.ipynb)
+- **F5‑TTS**: [`F5_TTS.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/F5_TTS.ipynb), [`F5_TTS_Training.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/F5_TTS_Training.ipynb)
+- **CosyVoice**: [`CosyVoice.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/CosyVoice.ipynb), [`CosyVoice2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/CosyVoice2.ipynb)
+- **Other**: [`OpenVoice.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/OpenVoice.ipynb), [`Seamless_Meta.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Seamless_Meta.ipynb)
 
 ### Voice conversion (VC) notebooks
-- **KNN‑VC**: `notebooks/vc/KNN_VC.ipynb`
-- **NeuCoSVC**: `notebooks/vc/NeuCoSVC*.ipynb`
-- **OpenAI TTS + VC**: `notebooks/vc/OpenAI_TTS_KNN_VC*.ipynb`, `notebooks/vc/OpenAI_TTS_RVC.ipynb`
+- **KNN‑VC**: [`KNN_VC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/KNN_VC.ipynb)
+- **NeuCoSVC**: [`NeuCoSVC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/NeuCoSVC.ipynb), [`NeuCoSVC_v2_先享版.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/NeuCoSVC_v2_先享版.ipynb)
+- **OpenAI TTS + VC**: [`OpenAI_TTS_KNN_VC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_KNN_VC.ipynb), [`OpenAI_TTS_KNN_VC_en.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_KNN_VC_en.ipynb), [`OpenAI_TTS_RVC.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/vc/OpenAI_TTS_RVC.ipynb)
 
 ## Repo layout
 ```text
