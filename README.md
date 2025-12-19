@@ -1,6 +1,5 @@
 ## Bark Voice Cloning + Multi‑Model TTS / Voice Cloning / Voice Conversion (UI + Notebooks)
 
-### Language
 **English (default)** | [**简体中文**](README_CN.md)
 
 ### Introduction
