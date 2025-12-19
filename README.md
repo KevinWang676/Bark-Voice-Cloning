@@ -1,9 +1,9 @@
 ## Bark Voice Cloning + Multi‑Model TTS / Voice Cloning / Voice Conversion (UI + Notebooks)
 
-### Language / 语言
-**English (default)** | [**简体中文**](README_zh.md)
+### Language
+**English (default)** | [**简体中文**](README_CN.md)
 
-### English (Introduction)
+### Introduction
 This repo **started as a single Bark voice cloning project** and has evolved into a collection of **cutting-edge TTS / voice cloning / voice conversion** training & inference scripts (UI + Colab notebooks).
 
 It is a practical toolbox focused on:
@@ -11,46 +11,38 @@ It is a practical toolbox focused on:
 - A separate **Sambert UI** workflow for **Chinese (and bilingual) personal voice cloning** with data labeling → training → inference.
 - A curated set of **Colab/Jupyter notebooks** covering multiple cutting-edge TTS / VC pipelines (GPT-SoVITS, XTTS, VALL-E X, F5‑TTS, CosyVoice, OpenAI TTS + VC, etc.).
 
-### 中文（简介）
-本仓库最初是一个 **Bark 声音克隆** 项目，现已发展为一个聚合多种前沿 **TTS / 声音克隆 / 变声（VC）** 的训练与推理脚本合集（含 UI 与 Colab 笔记本）。
-
-目前主要包含：
-- 基于 **Bark** 的 **Gradio 可视化 Web UI**（声音克隆 + TTS + 变声）。
-- 面向中文（并支持中英双语）的 **Sambert UI**：数据标注 → 训练 → 推理一体化界面。
-- 大量可直接运行的 **Colab/Jupyter 笔记本**，覆盖多种前沿 TTS/VC 技术路线（GPT‑SoVITS、XTTS、VALL‑E X、F5‑TTS、CosyVoice、OpenAI TTS + 变声等）。
-
-## What’s inside (Key entrypoints) / 主要入口
+## What's inside (Key entrypoints)
 - **Bark Web UI**: `app.py`
   - Tabs: **Clone Voice** (create `.npz` prompt), **TTS**, **Voice Conversion**
   - Uses: `cloning/clonevoice.py`, `swap_voice.py`, `bark/`, `util/`, `training/`
 - **Sambert Web UI**: `sambert-ui/app.py` (local), `sambert-ui/app_colab.py` (Colab-friendly)
 - **Bark training utilities (experimental)**: `training/training_prepare.py`, `training/train.py`, `training/data.py`
 
-## Quick Start (Bark UI) / 快速开始（Bark 可视化界面）
-### Requirements / 环境要求
+## Quick Start (Bark UI)
+### Requirements
 - Python **3.10+** recommended
 - GPU recommended (CPU works but is slow)
 
-### Install / 安装依赖
+### Install
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run / 启动
+### Run
 ```bash
 python app.py
 ```
 
-### Downloads & outputs / 模型下载与输出目录
+### Downloads & outputs
 - On first run, Bark checkpoints are downloaded into `./models/` (see `bark/generation.py`).
 - HuBERT + tokenizer for voice cloning are downloaded into `./models/hubert/` (see `bark/hubert/hubert_manager.py`).
 - Generated audio files are written to `outputs/` by default (configurable via `config.yaml` → `output_folder_path`).
 
-### Important note for local runs / 本地运行重要说明
+### Important note for local runs
 The Bark UI’s “Create Voice” feature writes a `.npz` prompt file. The default path in `app.py` is set for Colab (`/content/...`).  
 If you run locally, you may need to update that destination path to a valid path on your machine (e.g. inside `bark/assets/prompts/`).
 
-## Quick Start (Sambert UI) / 快速开始（Sambert UI）
+## Quick Start (Sambert UI)
 Sambert UI provides a full pipeline: **auto labeling → training → inference**.
 
 ```bash
@@ -61,8 +53,8 @@ python app.py
 
 More details: `sambert-ui/README.md`
 
-## Training & inference scripts (Bark path) / Bark 路线的训练与推理脚本
-### Inference / 推理
+## Training & inference scripts (Bark path)
+### Inference
 - **TTS (text → audio)**:
   - Core API: `bark/api.py` (`generate_with_settings`, `semantic_to_waveform`)
   - UI wrapper: `app.py` (`generate_text_to_speech`)
@@ -71,20 +63,20 @@ More details: `sambert-ui/README.md`
 - **Voice conversion (audio → new voice)**:
   - `swap_voice.py` (HuBERT tokens + Bark semantic_to_waveform with `history_prompt`)
 
-### Training (experimental) / 训练（实验性质）
+### Training (experimental)
 - `training/training_prepare.py`: generate semantic tokens from text, then synthesize wav pairs
 - `training/train.py`: prepare HuBERT-ready features and trigger tokenizer training (calls `bark/hubert/customtokenizer.py`)
 - `training/data.py`: text sourcing / filtering helpers
 
-## Notebooks / 笔记本（Colab/Jupyter）
-### Notebook organization / 组织方式
+## Notebooks (Colab/Jupyter)
+### Notebook organization
 Voice-related notebooks are grouped under:
 - `notebooks/tts/` (TTS / voice cloning)
 - `notebooks/vc/` (voice conversion; **any notebook with `VC` in its filename**)
 
 To keep older links working, the original notebook paths are kept as **symlinks**.
 
-### TTS / Voice cloning notebooks / TTS 与声音克隆笔记本
+### TTS / Voice cloning notebooks
 - **Bark**: `notebooks/tts/Bark_Voice_Cloning.ipynb`, `notebooks/tts/Bark_Coqui.ipynb`
 - **Sambert / Chinese voice cloning**: `notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb`, `notebooks/tts/SambertHifigan.ipynb`, `notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb`, `sambert-ui/Sambert_UI.ipynb`
 - **GPT-SoVITS**: `notebooks/tts/GPT_SoVITS.ipynb` (+ variants)
@@ -94,12 +86,12 @@ To keep older links working, the original notebook paths are kept as **symlinks*
 - **CosyVoice**: `notebooks/tts/CosyVoice.ipynb`, `notebooks/tts/CosyVoice2.ipynb`
 - **Other**: `notebooks/tts/OpenVoice.ipynb`, `notebooks/tts/Seamless_Meta.ipynb`
 
-### Voice conversion (VC) notebooks / 变声（VC）笔记本
+### Voice conversion (VC) notebooks
 - **KNN‑VC**: `notebooks/vc/KNN_VC.ipynb`
 - **NeuCoSVC**: `notebooks/vc/NeuCoSVC*.ipynb`
 - **OpenAI TTS + VC**: `notebooks/vc/OpenAI_TTS_KNN_VC*.ipynb`, `notebooks/vc/OpenAI_TTS_RVC.ipynb`
 
-## Repo layout / 目录结构
+## Repo layout
 ```text
 .
 ├── app.py                      # Bark Gradio UI (voice cloning / TTS / voice conversion)
@@ -116,5 +108,5 @@ To keep older links working, the original notebook paths are kept as **symlinks*
     └── ...                      # Other notebooks (LLM/agent/video/etc.)
 ```
 
-## Disclaimer / 免责声明
+## Disclaimer
 This repository is intended for research and learning. Please comply with local laws and obtain proper consent before cloning or converting any voice.
