@@ -1,7 +1,7 @@
-## Bark 声音克隆 + 多模型 TTS / 声音克隆 / 变声（UI + 笔记本）
+## Bark 声音克隆 + 多模型 TTS / 声音克隆 / 变声（UI + Colab 笔记本）
 
 ### 语言
-[**English**](README.md) | **简体中文（默认）**
+[**English**](README.md) | **简体中文**
 
 ### 简介
 本仓库最初是一个 **Bark 声音克隆** 项目，现已发展为一个聚合多种前沿 **TTS / 声音克隆 / 变声（VC）** 的训练与推理脚本合集（含 UI 与 Colab 笔记本）。
@@ -109,5 +109,6 @@ python app.py
 ```
 
 ## 免责声明
-本仓库仅供研究和学习使用。请遵守当地法律，在克隆或转换任何声音之前获得适当的同意。
+本仓库仅供研究和学习使用。请遵守当地法律，在克隆或转换任何声音之前需要取得音色提供者的明确同意。
 
+[![Star History Chart](https://api.star-history.com/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.com/#KevinWang676/Bark-Voice-Cloning&Date)
