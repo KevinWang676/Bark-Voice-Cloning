@@ -1,6 +1,5 @@
 ## Bark 声音克隆 + 多模型 TTS / 声音克隆 / 变声（UI + Colab 笔记本）
 
-### 语言
 [**English**](README.md) | **简体中文**
 
 ### 简介
