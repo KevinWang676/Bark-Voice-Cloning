@@ -73,8 +73,6 @@ python app.py
 - `notebooks/tts/`（TTS / 声音克隆）
 - `notebooks/vc/`（变声；**文件名包含 `VC` 的所有笔记本**）
 
-为保持旧链接正常工作，原始笔记本路径保留为 **符号链接**。
-
 ### TTS / 声音克隆笔记本
 - **Bark**：[`Bark_Voice_Cloning.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Voice_Cloning.ipynb)、[`Bark_Coqui.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Bark_Coqui.ipynb)
 - **Sambert / 中文声音克隆**：[`Voice_Cloning_for_Chinese_Speech_v2.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Voice_Cloning_for_Chinese_Speech_v2.ipynb)、[`SambertHifigan.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/SambertHifigan.ipynb)、[`Sambert_Voice_Cloning_in_One_Click.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/notebooks/tts/Sambert_Voice_Cloning_in_One_Click.ipynb)、[`Sambert_UI.ipynb`](https://github.com/KevinWang676/Bark-Voice-Cloning/blob/main/sambert-ui/Sambert_UI.ipynb)
