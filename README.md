@@ -157,4 +157,4 @@ Quick start: [Colab Notebook](https://colab.research.google.com/github/KevinWang
 
 HuggingFace demo: [Voice Cloning for Chinese Speech](https://huggingface.co/spaces/kevinwang676/Personal-TTS) 🤗
 
-[![Star History Chart](https://api.star-history.com/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.com/#KevinWang676/Bark-Voice-Cloning&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.dera.page/#KevinWang676/Bark-Voice-Cloning&Date)

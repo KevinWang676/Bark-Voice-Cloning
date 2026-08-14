@@ -108,4 +108,4 @@ python app.py
 ## 免责声明
 本仓库仅供研究和学习使用。请遵守当地法律，在克隆或转换任何声音之前需要取得音色提供者的明确同意。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.com/#KevinWang676/Bark-Voice-Cloning&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.dera.page/#KevinWang676/Bark-Voice-Cloning&Date)
