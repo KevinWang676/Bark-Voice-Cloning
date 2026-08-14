@@ -93,4 +93,4 @@ HuggingFace在线程序: [全新中文声音克隆](https://huggingface.co/space
 
 ![image](https://github.com/KevinWang676/Bark-Voice-Cloning/assets/126712357/7597122b-307f-41de-abdd-454dc0db5271)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.com/#KevinWang676/Bark-Voice-Cloning&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=KevinWang676/Bark-Voice-Cloning&type=Date)](https://star-history.dera.page/#KevinWang676/Bark-Voice-Cloning&Date)
